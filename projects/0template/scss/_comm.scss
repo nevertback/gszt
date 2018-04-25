@@ -48,6 +48,23 @@ a{text-decoration: none;cursor: pointer;}
 		visibility: visible;
 	}
 }
+.gs-popup{
+	position: fixed;
+	z-index: 99999;
+	.gs-popup-close{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 38px;
+		height: 38px;
+		background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat;
+		&:hover {
+			background-position: -33px 5px;
+		}
+	}
+	
+}
 .gsPopupMask{
 	position: fixed;z-index: 99998;top: 0;left: 0;
 	width: 100%;height: 100%;

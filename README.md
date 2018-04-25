@@ -6,4 +6,7 @@
 > 例：*dir = e:\gs\zt
 
 git操作
-1. git add .
+```git
+git remote add origin git@github.com:nevertback/gszt.git
+git push -u origin master
+```

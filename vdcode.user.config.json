@@ -1,0 +1,18 @@
+{
+    "editor.fontSize": 18,
+    "markdown.preview.fontSize": 18,
+    "terminal.integrated.fontSize": 16,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.colorTheme": "Monokai",
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 0
+}

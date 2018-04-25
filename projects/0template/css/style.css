@@ -27,6 +27,9 @@ a{text-decoration:none;cursor:pointer}
 .Bot .Copyright a:hover{color:#777}
 .gs-popup-mask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
 .gs-popup-mask.cur{opacity:1;visibility:visible}
+.gs-popup{position:fixed;z-index:99999}
+.gs-popup .gs-popup-close{display:block;position:absolute;top:0;right:0;width:38px;height:38px;background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat}
+.gs-popup .gs-popup-close:hover{background-position:-33px 5px}
 .gsPopupMask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
 .gsPopupMask.cur{opacity:1;visibility:visible}
 .gsPopup{z-index:99999;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}

@@ -2,6 +2,7 @@ let GsPopup = {
     createDom(opt){
         let vDom = '';
         vDom += `<div class="GsPopup GsPopupClose gs-popup-mask"></div>`;
+        vDom += `<div class="GsPopup gs-popup"><a class="gs-popup-close GsPopupClose"></a></div>`;
         return vDom;
     },
     scrollEnable(){
