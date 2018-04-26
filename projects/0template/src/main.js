@@ -11,7 +11,12 @@ GsPopup.init({
     tar:'.popupBtn'
 });
 GsPopup.init({
-    tar:'.popupBtn2'
+    tar:'.popupBtn2',
+    fnc:{
+        after(){
+            console.log('opened this')
+        }
+    }
 });
 /*
  * 使用当前专题组件
