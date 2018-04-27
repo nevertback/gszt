@@ -26,7 +26,7 @@ GsTab.init();
 	position: relative;
 	.gs-tab-navs{
 		.gs-tab-nav{
-			.cur{
+			&.cur{
 				
 			}
 		}
@@ -44,7 +44,7 @@ GsTab.init();
 			transition:all 0.25s ease;
 			opacity: 0;
 			visibility: hidden;
-			.cur{
+			&.cur{
 				opacity: 1;
 				visibility: visible;
 			}

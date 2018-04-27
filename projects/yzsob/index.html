@@ -15,7 +15,7 @@
 	<link type="text/css" rel="stylesheet" href="//j.gamersky.com/web2015/css/QZnav.css" />
 	<link href="css/style.min.css" rel="stylesheet" inline>
 	<script type="text/javascript" src="//j.gamersky.com/g/jquery-1.8.3.js"></script>
-	<!-- 创建时间：201800426 设计：皮皮 前端：MrrrTian -->
+	<!-- 创建时间：201800426-1039884 设计：皮皮 前端：MrrrTian -->
 </head>
 <body>
 <!-- 全站导航 -->
@@ -25,7 +25,7 @@
 	<p>《影之诗》5分钟华丽对决卡牌竞技手游！殿堂级的画面视觉享受，日本一线声优倾情打造！玩家们可以打造不同卡组，利用策略击败对手！更多相关资讯请关注游民星空。</p>
 	<img src="source/350.jpg" alt="二次元×日式幻想 《影之诗》今日双平台公测|游民星空">
 </div>
-<div id="ZtSection1" class="zt-section zt-section1">
+<div id="section1" class="zt-section zt-section1">
     <div class="container">
         <img src="source/s1-slogan.png" alt="slogan" class="slogan">
         <a target="_blank" href="https://sv.163.com/" class="logo_gf"></a>
@@ -50,6 +50,7 @@
 </div>
 <div id="section2" class="zt-section zt-section2">
     <div class="container">
+        <div class="tit" id="s2pos"></div>
         <a class="play popupBtn" data-type="videoH5" data-sid="https://nie.v.netease.com/nie/sv/gw/pc.mp4" data-w="800" data-h="452"><i class="round"></i><i class="arr"></i></a>
         <div class="para">
             <h5>「灾厄之树」</h5>
@@ -64,41 +65,202 @@
     </div>
 </div>
 <div id="section3" class="zt-section zt-section3">
-    <div class="gs-tab GsTab">
-        <div class="gs-tab-navs GsTabNavs">
-            <a class="gs-tab-nav GsTabNav"></a>
-            <a class="gs-tab-nav GsTabNav"></a>
-        </div>
+    <div class="gs-tab GsTab" id="GsTab3"></div>
+    <div class="tit" id="s3pos"></div>
+</div>
+<script>
+    window.GsZtSection3tab = {
+        tab:[
+            {
+                id:1,
+                bg:'source/s301.jpg',
+                vd:'source/s301vd.png',
+                cv:'CV：优木加奈',
+                vid:'https://nie.v.netease.com/nie/sv/fans/yalisha.mp4',
+                des:'<p>人们称呼天空中突然出现的谜之法阵为“灾厄之树”，笼罩世界的树荫仿佛滋长了人们内心的黑暗，当内心的黑暗充满世界之时，那扇未知的虚无之门亦将打开……而就在充满神秘的森林深处，一位可爱的精灵少女现身了，她就是亚里莎。</p><p>亚里莎是一位梦想成为独当一面的森林守护者，因此日不停歇地努力修行的精灵少女。为了救出被“虚幻之影”掳走的好友“萝莎丽亚”，亚里莎独自离开森林，就此展开了一场奇异的旅程……</p>'
+            },
+            {
+                id:2,
+                bg:'source/s302.jpg',
+                vd:'source/s302vd.png',
+                cv:'CV：石上静香',
+                vid:'https://nie.v.netease.com/nie/sv/fans/ailisi.mp4',
+                des:'<p>艾莉卡的身份是侍奉亚雷斯达王国公主的女仆。她作为女仆的表现非常优秀，而且拥有高超的战斗力，护卫能力更是不在话下。由于传说中的暗夜伯爵所沉睡的“封印的古城”发生了异变，而离开王城前往调查。</p><p>从立绘里可以看出，手持利剑的艾莉卡头发随风飘扬，即使穿着女仆装也掩饰不住她的英气逼人。看来她的确是一位很强力的战士呢！</p>'
+            },
+            {
+                id:3,
+                bg:'source/s303.jpg',
+                vd:'source/s303vd.png',
+                cv:'CV：佐仓薰',
+                vid:'https://nie.v.netease.com/nie/nie/sv/fans/yishabeier.mp4',
+                des:'<p>一头紫色长发的伊莎贝尔，曾是一位在亚雷斯达王国进行魔法研究的宫廷魔法师。但是这位充满魅力的“大姐姐”，却有着悲伤又痛苦的一段过去。在与龙的战争中，伊莎贝尔痛失自己挚爱的未婚夫，经历了此悲痛的她，因此而沉迷研究，踏入钻研复活术的禁忌领域。</p><p>一心希望复活未婚夫的伊莎贝尔被祭司伊莉丝的分身所引导，以为灾厄之树可以复活自己的爱人而前往灾厄之树，在路上遇到了未婚夫昔日上司——罗文。这之后又会产生什么样的变化呢？故事将发生怎样的展开呢？大家可以在游戏中寻找答案！</p>'
+            },
+            {
+                id:4,
+                bg:'source/s304.jpg',
+                vd:'source/s304vd.png',
+                cv:'CV：杉田智和',
+                vid:'https://nie.v.netease.com/nie/sv/fans/luowen2.mp4',
+                des:'<p>罗文身为亚雷斯达王国军的前骑士团团长，他具有面对巨龙也能临危不惧的勇气，以及时常为伙伴着想的体贴的心。为了不使妻女受到突然出现的谜样怪物的伤害，他执起长枪挺身奋战。</p><p>然而身陷黑龙的诅咒之中，罗文究竟是否能够控制自己的力量，守护自己的家人……他又将如何面对因自己而受到精神创伤的好友的恋人伊莎贝尔……</p>'
+            },
+            {
+                id:5,
+                bg:'source/s305.jpg',
+                vd:'source/s305vd.png',
+                cv:'CV：小仓唯',
+                vid:'https://nie.v.netease.com/nie/2018/0312/c1dd731f1db9ee3db3f572d92591869dqt.mp4',
+                des:'<p>嘀嗒嘀嗒嘀！当午夜的钟声准时响起时，可爱的萝莉也要出门散步啦！在“爸爸”和“妈妈”的陪同下，唤灵师——露娜走出家门和我们见面啦！梳着可爱的双马尾，身着蓬蓬裙，手上抱着卡哇伊的玩偶，背后却陪伴着两个穿着斗篷的幽灵……这就是露娜，一个在被黑暗薄雾所笼罩的洋馆中独自生活着的少女。与其年龄相应的可爱外表下，寄宿着冰冷且不详的阴影。</p><p>为了能更开心地跟“爸爸”、“妈妈”一起散步，决定要与别人交“朋友”。“哎呀！露娜喜欢你，你可以做露娜的 ‘朋友’ 吗？”露娜的名台词，是不是让你觉得有那么一丝丝寒意袭人呢？</p>'
+            },
+            {
+                id:6,
+                bg:'source/s306.jpg',
+                vd:'source/s306vd.png',
+                cv:'CV：诹访部顺一',
+                vid:'https://nie.v.netease.com/nie/sv/fans/youliyasi.mp4',
+                des:'<p>尤里亚斯，他属于支配夜晚的种族——暗夜族的末裔。曾经败给了亚雷斯达王国国王巴尔萨泽的他，长久地被封印在古城中，直至许久之后才被不明身份的神秘之人解开了封印。</p><p>从沉睡中苏醒的他，第一件事就是希望和巴尔萨泽再次一较高下，然而时过境迁，生命中的宿敌早已淹没在时间的洪流中，以战斗为乐的他，又将如何满足自己？</p>'
+            },
+            {
+                id:7,
+                bg:'source/s307.jpg',
+                vd:'source/s307vd.png',
+                cv:'CV：井上喜久子',
+                vid:'https://crazynote.v.netease.com/2018/0403/a916227208ce4ce4687f3dc0bdd08a39qt.mp4',
+                des:'<p>伊莉丝是大圣堂里一位虔诚的主教，她将人类获得救赎当做自己要为之奋斗一生的目标，美丽的面容上充满了坚定与信仰的神情。一头金色的长发，在太阳光下耀眼夺目，仿佛笼罩在圣光之下。这就是伊莉丝，一直坚持拯救世人道路的伊莉丝。</p><p>但是事情似乎没有这么简单。因为某件事情而失去记忆的她到底有什么过往，在“灾厄之树”降临后，伊莉丝遇见的“另一个自己”，究竟是日夜祈祷中的救赎？还是另有着其他的答案呢……</p><p>这一切，都将在游戏中等待你去发掘。</p>'
+            },
+            {
+                id:8,
+                bg:'source/s308.jpg',
+                vd:'source/s308vd.png',
+                cv:'CV：柿原彻也',
+                vid:'https://nie.v.netease.com/nie/sv/fans/yiang1.mp4',
+                des:'<p>一个世界所孕育出的生命以及历史，绝非是”管理者”可以妄自操弄的，应该由在这里生息的人们自己决定!超越者伊昂穿越了空间的界限，他离开了自己所处的世界，拯救这个被”管理者”涅克萨斯破坏着的世界，哪怕要孤身战斗，也在所不惜。</p><p>坚毅的超越者伊昂利用自己的机械造物之术与穿越的能力到底能否战胜“管理者”涅克萨斯？面对越来越多的敌人，真的只能独自一人战斗到底吗？欢迎你进入《影之诗》的世界，亲眼见证故事的答案吧。</p>'
+            }
+        ]
+    };
+</script>
+<div id="section4" class="zt-section zt-section4">
+    <div class="gs-tab GsTab" id="GsTab4">
         <div class="gs-tab-items GsTabItems">
-            <div class="gs-tab-item GsTabItem"></div>
-            <div class="gs-tab-item GsTabItem"></div>
+            <div class="gs-tab-item GsTabItem">
+                <img class="pic" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="source/s401.jpg" alt="pic">
+                <div class="bgset">
+                    <p>存在于和亚里莎她们目前所在世界不同的次元中，是居住在“东国”的少女。</p>
+                    <p>平时的性格如春日般温和，战斗时却有着令熟练的士兵甘拜下风的冷静与判断力。</p>
+                    <p>花怜那让无数“阴阳符”飘落，横扫敌兵的身姿，恐怕便是人们所说的“乱舞红花”。</p>
+                    <p>战斗时的她和平时判若两人，并非是双重人格。</p>
+                    <p>学习与西洋魔法不同的“阴阳术”，用独特的符——“阴阳符”来操控魔法。</p>
+                    <p>这个“阴阳符”中蕴含着魔力，她只需说出一句话便可以发挥出各种力量。</p>
+                </div>
+            </div>
+            <div class="gs-tab-item GsTabItem">
+                <img class="pic" src="//image.gamersky.com/webimg13/zhuanti/common/blank.png" data-src="source/s402.jpg" alt="pic">
+                <div class="bgset">
+                    <p>存在于和亚里莎她们目前所在世界不同的次元中，是居住在“里月之森”中的男性。</p>
+                    <p>乍一看，是一名俊美温柔的贵公子，然而他的心中却充满了对同伴的怨念和仇恨。</p>
+                    <p>成为森林的首领，主宰了所有林中生命的他，却下令让所有生物自杀。然后，亲手将同伴们一个个杀死。</p>
+                    <p>经过多年，复仇成功后，他的心灵终于迎来了平静。</p>
+                    <p>如今他独自一人居住在森林中，讴歌着那份孤独。</p>
+                </div>
+            </div>
+        </div>
+        <div class="gs-tab-navs GsTabNavs">
+            <a class="gs-tab-nav GsTabNav"><i class="nav nav1"></i></a>
+            <a class="gs-tab-nav GsTabNav"><i class="nav nav2"></i></a>
+        </div>
+    </div>
+    <div class="para para1">
+        <p>伴随着《影之诗》国服的持续优化和更新，国服专属的两款新皮肤——巫师新皮肤花怜和精灵新皮肤迪特里希的登场，相当令人期待。本次《影之诗》国服为玩家们带来了“萌萝莉”和“英俊少年”的搭配，相信一定能够让大家眼前一亮！</p>
+    </div>
+    <div class="para para2">
+        <p>作为一款主打强竞技性的卡牌对战手游，《影之诗》游戏中有主线故事，练习模式，自由对战，阶位对战，好友对战和竞技场（双选对战）等多种玩法。新手可以先从日常任务和主线故事中试验卡组，在进行练习的同时积累经验，适应游戏的玩法，而熟悉《影之诗》卡牌对战的高玩们，就可以尽情挑战天梯和竞技场来展现自己的身手啦！</p>
+    </div>
+    <div class="tit1" id="s4pos"></div>
+    <div class="tit2" id="s5pos"></div>
+</div>
+<div id="section5" class="zt-section zt-section5">
+    <div class="container">
+        <div class="card">
+            <img src="source/s501.png" alt="pic">
+            <div class="des">
+                <p>在天梯模式中每局胜场会获得100阶位积分，累计一定数量的阶位积分可以达成累计阶位积分任务获得金币、乙太、卡包兑换券和双选模式入场券作为奖励。每月初任务会重置，而段位保留。</p>
+                <p>双选对战与别的模式不同，它最大的特点就是随机。系统会随机抽取三个职业给玩家选择，而且卡组卡片数量从40减为30，挑选15次卡片，每次2张。其中第一次和最后一次会出现对应职业的金/虹卡。中间13次也有小几率出现中立卡的金卡。在《影之诗》的双选对战中玩家需要打完5场比赛，并根据胜场数获得相应的成就奖励。</p>
+            </div>
         </div>
     </div>
 </div>
-
-<div id="section4" class="zt-section zt-section4"></div>
-<div id="section5" class="zt-section zt-section5"></div>
+<div id="section6" class="zt-section zt-section6">
+    <div class="container">
+        <div class="tit" id="s6pos"></div>
+        <img class="pic" src="source/s601.png" alt="s6">
+        <div class="des des1">
+            <p><b>角色卡:</b>通过支付PP值放置进场，用于直接攻击对方或者对方场上的角色。值得关注的是，游戏设有“进化”系统，玩家的所有角色卡都可以通过进化，发动各种强力的特殊技能。</p>
+            <p><b>咒术卡:</b>直接通过支付相应PP值，破坏对方角色，使用后的卡会置入“墓地”。灵活使用咒术，能起到影响战局的作用。</p>
+            <p><b>场地卡:</b>其作用与咒术有着异曲同工的作用，但关键是场地发动效果后，会留存在场上，并且持续效果。通过场地可以让相应的种族类型角色卡得到强化，不过要注意的是，场地卡最多可以加入5张，而场上最多只能放置1张，如果场上已经有场地卡的话，其他场地将无法使用。</p>
+        </div>
+        <div class="des des2">
+            <p><b>入场曲:</b>随从、场地、结界入场时即发动的效果。</p>
+            <p><b>谢幕曲:</b>随从或者咏唱类结界被破坏时，发动的效果。</p>
+            <p><b>觉醒:</b>龙职业pp值大于或等于7时进入觉醒状态。</p>
+            <p><b>复仇:</b>血族职业体力小于或等于10时进入复仇状态。</p>
+            <p><b>魔力增幅:</b>女巫职业每发动一张咒术，则使手牌中拥有共鸣效果的牌产生一次共鸣。</p>
+            <p><b>死灵术:</b>消耗墓地数来达到通灵卡牌描述效果。</p>
+            <p><b>潜伏:</b>不能被对方指定为法术与攻击目标。</p>
+            <p><b>破坏:</b>置入墓地并触发谢幕曲。</p>
+            <p><b>消灭:</b>不置入墓地且不触发谢幕曲。</p>
+            <p><b>疾驰:</b>本回合可以发动攻击。（可攻击角色）</p>
+            <p><b>突进:</b>本回合可以发动进攻。（不可攻击角色）</p>
+            <p><b>守护:</b>必须先攻击该随从。</p>
+            <p><b>必杀:</b>受到必杀随从攻击的随从立即被破坏。</p>
+            <p><b>E P:</b>随从进化需要的点数</p>
+            <p><b>爆能强化:</b>使用持有爆能强化的卡片时，若自己剩余的pp数大于或等于“爆能强化”所需要的数值，则消耗该数值的pp，获得描述对应强化。</p>
+        </div>
+    </div>
+</div>
+<div id="section7" class="zt-section zt-section7">
+    <div class="outer_wrap">
+        <div class="gallery_container">
+            <a class="gallery_item cleaarfix">
+                <img title="" alt="img" src="source/ts1_cb3bec7.jpg">
+                <span class="mask"></span>
+            </a>
+            <a class="gallery_item cleaarfix">
+                <img title="" alt="img" src="source/ts2_4a3cb03.jpg">
+                <span class="mask"></span>
+            </a>
+            <a class="gallery_item cleaarfix">
+                <img title="" alt="img" src="source/ts3_5bc5afd.jpg">
+                <span class="mask"></span>
+            </a>
+            <a class="gallery_item cleaarfix">
+                <img title="" alt="img" src="source/ts4_209c9fb.jpg">
+                <span class="mask"></span>
+            </a>
+            <a class="gallery_item cleaarfix">
+                <img title="" alt="img" src="source/ts5_5982a81.jpg">
+                <span class="mask"></span>
+            </a>
+        </div>
+        <a class="gallery_prev"><i></i></a>
+        <a class="gallery_next"><i></i></a>
+    </div>
+    <div class="tit" id="s7pos"></div>
+</div>
 <div id="sectionComm" class="zt-section zt-sectionComm">
 	<div class="container">
+		<div class="tit" id="s8pos"></div>
 		<div class="Comment hei">
-			<div id="SOHUCS" sid="1039884"></div>
+			<div id="SOHUCS" sid="512179"></div>
 		</div>
 	</div>
 </div>
 <div class="Bot">
 	<script type="text/javascript" src="//www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
 </div>
-<ul id="fixednav" class="fixednav">
-	<li><a class="" data-to="#section1" data-off="36"></a></li>
-	<li><a class="" data-to="#section2"></a></li>
-	<li><a class="" data-to="#section3"></a></li>
-	<li><a class="" data-to="#section4"></a></li>
-	<li><a class="" data-to="#section5"></a></li>
-	<li><a class="" data-to="#sectionComm"></a></li>
-</ul>
-<span id="countn" generalId="1039884" style="display:none;"></span>
+<span id="countn" generalId="512179" style="display:none;"></span>
 <script src="//j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
-<script src="//j.gamersky.com/g/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    var Gallery=function(){function e(){var e=$.browser;return 1==e.msie?e.version:11}function l(e){var l=e.options,i=l.galleryContainer.find(".gallery_item"),t=i.length,n=i.width(),a=i.height();if(t==l.slidesPerView){var o=l.galleryContainer.html();l.galleryContainer.append(o),i=l.galleryContainer.find(".gallery_item")}i.each(function(){$(this).css("margin-left",-n/2),$(this)[0].style[g+"ransitionDuration"]=l.speed+"ms"}),e.options.galleryContainer.css({width:n*l.slidesPerView,height:a}),r(e,l.initialSlide)}function t(e){{var l=e.options.galleryContainer;e.options.galleryContainer.find(".gallery_item").length}e.fs=l.find(".gallery_active"),e.rm=l.find(".gallery_right_middle"),e.rb=l.find(".gallery_right_back"),e.lm=l.find(".gallery_left_middle"),e.lb=l.find(".gallery_left_back")}function n(e){var l=e.options,i=l.galleryContainer.find(".gallery_item"),t=i.length,n=$(l.gallery_prev),r=$(l.gallery_next);if(n.length>0&&n.click(function(){e.lm.click()}),r.length>0&&r.click(function(){e.rm.click()}),l.galleryContainer.on("click",".gallery_item",function(){var l=$(this),i=l.index();e.toSlide(i)}),l.autoPlay){setInterval(function(){var l=$(".gallery_active").index();l=(l+1)%t,e.toSlide(l)},l.autoPlay)}}function r(l,i,n){var r=l.options,o=r.galleryContainer.find(".gallery_item"),d=o.length;o.eq(i).addClass("gallery_active");var g=(i+1)%d;o.eq(g).addClass("gallery_right_middle");var f=(i-1+d)%d;if(o.eq(f).addClass("gallery_left_middle"),5==r.slidesPerView){var y=(i+2)%d;o.eq(y).addClass("gallery_right_back");var c=(i-2+d)%d;o.eq(c).addClass("gallery_left_back")}t(l),e()<10&&"number"==typeof n&&((i>n&&0!=i||0==i&&n==d-1)&&(o.removeClass("z-index3 z-index2"),l.rm.addClass("z-index2"),l.lm.addClass("z-index3")),(n>i&&i!=d-1||i==d-1&&0==n)&&(o.removeClass("z-index3 z-index2"),l.lm.addClass("z-index2"),l.rm.addClass("z-index3"))),s(l),5==r.slidesPerView?a([i,g,y,f,c],l):a([i,g,f],l)}function a(e,l){for(var i=l.options,t=i.galleryContainer.find(".gallery_item"),n=t.length,r=0;n>r;r++)$.inArray(r,e)>-1||o(l,t.eq(r),0,0,8*i.depth)}function o(e,l,i,t,n){if(l[0].style[g+"ransform"]="translate3d("+-t+"px,0,"+-n+"px) rotateX(0deg) rotateY("+i+"deg)",!g){var r=-e.options.galleryContainer.find(".gallery_item").width();l.animate({"margin-left":r/2-t},e.options.speed,"linear")}}function s(e){{var l=e.options,i=l.galleryContainer,t=i.find(".gallery_item"),n=t.width();t.height()}o(e,i.find(".gallery_left_middle"),l.rotate,n+l.stretch,l.depth),o(e,i.find(".gallery_active"),0,0,0),o(e,i.find(".gallery_right_middle"),-l.rotate,-n-l.stretch,l.depth),5==l.slidesPerView&&(o(e,i.find(".gallery_left_back"),1.4*l.rotate,2*(n+l.stretch),2*l.depth),o(e,i.find(".gallery_right_back"),1.4*-l.rotate,2*(-n-l.stretch),2*l.depth))}function d(e,l){var i={index:l};if("function"==typeof e.options.onGalleryStart&&e.options.onGalleryStart(i),"function"==typeof e.options.onGalleryEnd){var t=e.options;setTimeout(function(){t.onGalleryEnd(i)},t.speed)}var n=e.fs.index();n!=l&&(e.fs.removeClass("gallery_active"),e.rm.removeClass("gallery_right_middle"),e.lm.removeClass("gallery_left_middle"),e.rb.removeClass("gallery_right_back"),e.lb.removeClass("gallery_left_back"),r(e,l,n))}var g=function(){if(e()<10)return!1;var l,t=document.createElement("div").style,n="t,WebkitT,MozT,msT,OT".split(",");for(i=0;i<n.length;i++)if(l=n[i]+"ransform",l in t)return n[i]}(),f=function(e){this.options=$.extend({rotate:50,stretch:0,depth:150,slidesPerView:5,speed:500,initialSlide:0},e),this.options.galleryContainer=$(e.galleryContainer),this.fs=null,this.rm=null,this.rb=null,this.lm=null,this.lb=null,l(this),n(this)};return f.prototype={toSlide:function(e){d(this,e)}},{create:function(e){return new f(e)}}}();
+</script>
 <script src="js/bundle.min.js" inline></script>
 <script>
 </script>

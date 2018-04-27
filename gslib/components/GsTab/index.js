@@ -5,6 +5,17 @@ let GsTab = {
             $nav = $navs.find('.GsTabNav'),
             $items = $tab.find('.GsTabItems'),
             $item = $tab.find('.GsTabItem'),tabTimer;
+        function loadLazyImg(imgs) {
+            imgs.each(function () {
+                let $ts = $(this),isload = $ts.attr('data-isload'),realSrc = $ts.attr('data-src');
+                if(isload !== 'ok'){
+                    $ts.attr({
+                        'data-isload':'ok',
+                        'src':realSrc
+                    });
+                }
+            });
+        }
         function eventDoBefore() {
             if(typeof opt.fnc.before === "function"){
                 opt.fnc.before();
@@ -13,6 +24,9 @@ let GsTab = {
         function eventDo(idx) {
             $nav.add($item).removeClass('cur');
             $nav.eq(idx).add($item.eq(idx)).addClass('cur');
+            if(opt.lazyimg === true){
+                loadLazyImg($item.eq(idx).find('img'));
+            }
             if(typeof opt.fnc.after === "function"){
                 opt.fnc.after();
             }
@@ -41,6 +55,9 @@ let GsTab = {
             })
         }
         function setTabState(){
+            if(opt.lazyimg === true){
+                loadLazyImg($item.eq(0).find('img'));
+            }
             $nav.eq(0).add($item.eq(0)).addClass('cur');
             $nav.each(function (i) {
                 $(this).attr('data-GsTabKey',i);
@@ -59,6 +76,7 @@ let GsTab = {
             timer:{
                 delay:120
             },
+            lazyimg:false,
             changeEvent:'mouseover', //mouseover | click
             fnc:{
                 after(){},
