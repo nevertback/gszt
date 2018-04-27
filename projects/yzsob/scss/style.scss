@@ -1,0 +1,159 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 1010px;
+	background:url(../source/bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 622px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 48px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 42px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 129px;
+			top: 0;
+			@include sprite($logo-gf);
+		}
+		.slogan{
+			display: block;
+			margin-left: 198px;
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 823px;
+			&.btn1{
+				left: 249px;
+				@include sprite($s1-btn1);
+				&:hover{@include sprite-position($s1-btn1-h);}
+			}
+			&.btn2{
+				left: 486px;
+				@include sprite($s1-btn2);
+				&:hover{@include sprite-position($s1-btn2-h);}
+			}
+			&.btn3{
+				left: 723px;
+				@include sprite($s1-btn3);
+				span{
+					display: block;
+					position: absolute;
+					left: 216px;
+					top: -52px;
+					@include sprite($s1-code-bg);
+					transition:all 0.25s ease;
+					visibility: hidden;
+					opacity: 0;
+					transform:translate3d(-20px,0,0);
+					img{
+						display: block;
+						position: absolute;
+						left: 13px;
+						top: 7px;
+						width: 140px;
+						height: 140px;
+					}
+				}
+				&:hover{
+					@include sprite-position($s1-btn3-h);
+					span{
+						visibility: visible;
+						opacity: 1;
+						transform:translate3d(0,0,0);
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 907px;
+	background:url(../source/bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 634px;
+		.para{
+            text-align: center;
+            color: #fff;
+			h5{
+                margin-bottom: 5px;
+				line-height: 40px;
+                font-size: 25px;
+			}
+            p{
+                margin-bottom: 7px;
+                line-height: 24px;
+                font-size: 15px;
+            }
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 516px;
+			top: 440px;
+			width: 168px;
+			height: 169px;
+			i{
+				display: block;
+				position: absolute;
+				&.round{
+					left: 0;
+					top: 0;
+					@include sprite($play-round);
+					animation: routate360 8s linear infinite;
+				}
+				&.arr{
+					left: 70px;
+					top: 59px;
+					@include sprite($play-arr);
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 1082px;
+	background:url(../source/bg3.jpg) center 0 no-repeat;
+}
+.zt-section4{
+	height: 1191px;
+	background:url(../source/bg4.jpg) center 0 no-repeat;
+}
+.zt-section5{
+	height: 760px;
+	background:url(../source/bg5.jpg) center 0 no-repeat;
+}
+.zt-section6{
+	height: 1110px;
+	background:url(../source/bg6.jpg) center 0 no-repeat;
+}
+.zt-section7{
+	height: 770px;
+	background:url(../source/bg7.jpg) center 0 no-repeat;
+}
+.zt-section8{
+	height: 550px;
+	background:url(../source/bg8.jpg) center 0 no-repeat;
+}
+.zt-sectionComm{
+	padding-bottom: 30px;
+	height:auto;
+	.container{
+		position: relative;
+		padding-top: 86px;
+	}
+}
+@import 'anim';
+
+
