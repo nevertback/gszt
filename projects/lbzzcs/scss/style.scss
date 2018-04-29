@@ -1,0 +1,489 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 966px;
+	background:url(../gsres/bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 39px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 42px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 142px;
+			top: 33px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 578px;
+			&.btn1{
+				left: 115px;
+				@include sprite($s1-btn1);
+				&:hover{@include sprite-position($s1-btn1-h);}
+			}
+			&.btn2{
+				left: 640px;
+				@include sprite($s1-btn2);
+				&:hover{@include sprite-position($s1-btn2-h);}
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 462px;
+			top: 556px;
+			@include sprite($s1-play);
+			&:hover{@include sprite-position($s1-play-h);}
+		}
+	}
+}
+.zt-section2{
+	height: 1111px;
+	background:url(../gsres/bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 177px;
+		.para{
+			margin: 0 auto 35px;
+			width: 1000px;
+			height: 120px;
+			p{
+				line-height: 30px;
+				font-size: 16px;
+				color: #1d2b3a;
+				text-indent: 32px;
+			}
+		}
+		.box{
+			width: 1100px;
+			height: 96px;
+			.box-left{
+				float: left;
+				margin-left: 84px;
+				width: 340px;
+			}
+			.box-right{
+				float: left;
+				margin-left: 170px;
+				width: 340px;
+			}
+			h5{
+				height: 44px;
+				line-height: 44px;
+				font-size: 22px;
+				color: #3a7fbd;
+			}
+			p{
+				font-size: 16px;
+				color: #1c252d;
+			}
+		}
+		.btn{
+			display: block;
+			margin: 22px auto 41px;
+			@include sprite($s2-btn1);
+			&:hover{@include sprite-position($s2-btn1-h);}
+		}
+		.info{
+			margin-bottom: 236px;
+			width: 1100px;
+			height: 66px;
+			color: #1d2b3a;
+			text-align: center;
+			h5{
+				line-height: 40px;
+				font-size: 30px;
+			}
+			p{
+				line-height: 24px;
+				font-size: 16px;
+			}
+		}
+		ul{
+			padding-left: 200px;
+			width: 900px;
+			li{
+				float: left;
+				margin-right: 82px;
+				width: 178px;
+				img{
+					margin-bottom: 8px;
+					display: block;
+					width: 178px;
+					height: 89px;
+				}
+				p{
+					width: 208px;
+					margin-left: -15px;
+					line-height: 26px;
+					font-size: 16px;
+					color: #fff;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 652px;
+	background:url(../gsres/bg3.jpg) center 0 no-repeat;
+	.container{
+		padding-top: 164px;
+		ul{
+			margin-left: 44px;
+			width: 1040px;
+			li{
+				float: left;
+				margin-bottom: 6px;
+				margin-right: 21px;
+				width: 320px;
+				height: 214px;
+				a{
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 100%;
+					img{
+						display: block;
+						width: 320px;
+						height: 178px;
+					}
+					span{
+						display: block;
+						height: 36px;
+						line-height: 36px;
+						font-size: 16px;
+						color: #d2eafa;
+						text-align: center;
+					}
+					i{
+						display: block;
+						position: absolute;
+						left: 138px;
+						top: 64px;
+						@include sprite($s3-play);
+					}
+					&:hover{
+						i{@include sprite-position($s3-play-h)}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 743px;
+	background:url(../gsres/bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 153px;
+		.hide {
+			display: block;
+			width: 0;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.db {
+			display: block;
+			text-indent: -999em;
+		}
+
+		.tit_sp {
+			background: url(../gsres/tit_sp.png) no-repeat;
+		}
+
+		.btn_sp {
+			background: url(../gsres/btn_sp.png) no-repeat;
+		}
+		.box {
+			position: relative;
+			margin: 0 auto;
+			width: 1000px;
+			ul {
+				position: relative;
+				width: 1000px;
+				height: 238px;
+			}
+			.item {
+				position: absolute;
+				width: 0;
+				height: 0;
+				background: url(../gsres/lb_k.png) no-repeat 0 0;
+				padding: 25px 10px 20px;
+				top: 146px;
+				left: 377px;
+				z-index: 0;
+				cursor: pointer;
+			}
+			li {
+				img {
+					width: 100%;
+					height: 100%;
+					vertical-align: top;
+					display: block;
+				}
+				div {
+					background-color: #000000;
+					position: relative;
+				}
+				a {
+					display: block;
+				}
+			}
+			p {
+				margin: 60px auto 0;
+			}
+		}
+
+		.info1 {
+			background-position: 0 -84px;
+			width: 345px;
+			height: 40px;
+		}
+
+		.info2 {
+			background-position: 0 -122px;
+			width: 318px;
+			height: 39px;
+		}
+
+		.info3 {
+			background-position: 0 -160px;
+			width: 345px;
+			height: 40px;
+		}
+
+		.prev {
+			z-index: 999;
+			position: absolute;
+			display: block;
+			width: 46px;
+			height: 41px;
+			top: 160px;
+			left: 30px;
+			background-position: 0 -212px;
+		}
+
+		.next {
+			z-index: 999;
+			position: absolute;
+			display: block;
+			width: 46px;
+			height: 41px;
+			top: 160px;
+			right: 30px;
+			background-position: -51px -212px;
+		}
+
+		.btnss {
+			margin-top: 225px;
+			a {
+				display: inline;
+				width: 178px;
+				height: 50px;
+				float: left;
+			}
+		}
+
+		.btn1 {
+			background-position: 0 -358px;
+			margin-left: 90px;
+			&:hover, &.active {
+				background-position: -178px -358px;
+			}
+		}
+
+		.btn2 {
+			background-position: 0 -257px;
+			margin: 0 145px;
+			&:hover, &.active {
+				background-position: -178px -257px;
+			}
+		}
+
+		.btn3 {
+			background-position: 0 -308px;
+			&:hover, &.active {
+				background-position: -178px -308px;
+			}
+		}
+
+		.box {
+			pre {
+				cursor: pointer;
+			}
+			video {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				left: 0px;
+				z-index: 2;
+			}
+		}
+	}
+}
+.zt-section5{
+	height: 817px;
+	background:url(../gsres/bg5.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 151px;
+		.zt-sld-wrap{
+			position: relative;
+			width: 1100px;
+			height: 606px;
+			.zt-sld-arr{
+				display: block;
+				position: absolute;
+				top: 266px;
+				&.zt-sld-arr-prev{
+					left: 0;
+					@include sprite($arr-prev);
+				}
+				&.zt-sld-arr-next{
+					right: 0;
+					@include sprite($arr-next);
+				}
+			}
+			.zt-sld{
+				margin-left: 44px;
+				width: 1000px;
+				height: 606px;
+				background: url(../gsres/s5-sld.png) 0 0 no-repeat;
+				.zt-sld-con{
+					li{
+						position: relative;
+						padding: 34px 20px;
+						width: 960px;
+						height: 538px;
+						img{
+							display: block;
+							width: 960px;
+							height: 538px;
+							background:url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-popup-s2{
+	width: 900px;
+	.zt-popup-head{
+		@include sprite($pop-head);
+		line-height: 113px;
+		font-size: 40px;
+		color: #fff;
+		text-align: center;
+		font-weight: bold;
+	}
+	.zt-popup-scl{
+		height: 500px;
+		background-color: #fff;
+		overflow: hidden;
+		overflow-y: auto;
+		.zt-popup-context{
+			padding: 35px 56px 50px;
+		}
+	}
+	.zt-popup-foot{}
+	.ques-box{
+		padding:0 0 25px;
+		h5{
+			margin-bottom: 5px;
+			padding: 12px 0;
+			line-height: 26px;
+			font-size: 18px;
+			color: #333;
+		}
+		.ques-list{
+			.ques-sel{
+				user-select: none;
+				position: relative;
+				display: block;
+				padding: 5px 0 5px 30px;
+				line-height: 20px;
+				font-size: 16px;
+				color: #333;
+				i{
+					display: block;
+					position: absolute;
+					left: 2px;
+					top: 6px;
+					&.ques-sel-sig{
+						@include sprite($sel-sig);
+					}
+					&.ques-sel-mut{
+						@include sprite($sel-mut);
+					}
+				}
+				&.cur{
+					i{
+						&.ques-sel-sig{
+							@include sprite-position($sel-sig-c);
+						}
+						&.ques-sel-mut{
+							@include sprite-position($sel-mut-c);
+						}
+					}
+				}
+			}
+		}
+	}
+	.ques{
+		.ques-bot{
+			width: 900px;
+			height: 60px;
+			.ques-ipt{
+				float: left;
+				margin-left: 140px;
+				width: 340px;
+				height: 60px;
+				background-color: #e8ecf0;
+				input{
+					display: block;
+					margin-left: 25px;
+					padding: 20px 0;
+					width: 310px;
+					line-height: 20px;
+					font-size: 16px;
+					color: #666;
+					border: none;
+					outline: 0;
+					background: none;
+				}
+			}
+			.ques-smt{
+				display: block;
+				float: left;
+				margin-left: 10px;
+				width: 160px;
+				height: 60px;
+				line-height: 60px;
+				font-size: 20px;
+				color: #fff;
+				text-align: center;
+				font-weight: bold;
+				background-color: #3a8bd4;
+				&:hover{
+					background-color: #3f96e5;
+				}
+			}
+		}
+	}
+}

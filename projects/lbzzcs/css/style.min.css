@@ -1,0 +1,134 @@
+.bdsharewrap.bdstyle-c{width:242px;height:36px;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:36px;*font-size:0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{display:table;content:" "}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{clear:both}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;margin:0 4px 0 0;padding:0;display:inline-block;*display:inline;*zoom:1;width:37px;height:36px;background:url(http://image.gamersky.com/webimg13/zhuanti/cf8zn/fx.png) 0 0 no-repeat}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-position:0 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-position:-40px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-position:-80px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren{background-position:-121px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-position:-161px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-200px 0;text-indent:9999px;white-space:nowrap;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba{display:none}
+body,html{min-width:1280px}
+body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}
+h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}
+a{text-decoration:none;cursor:pointer}
+.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}
+.clearfix:after,.container:after{clear:both}
+.container{margin-right:auto;margin-left:auto;width:1100px}
+.zt-section{margin:0;padding:0;overflow:hidden;width:100%;min-width:1100px}
+.QZnav{min-width:1100px}
+.QZnav .topbar{width:1100px}
+.QZnav .QZ-nav{display:none}
+.Bot{width:100%;min-width:1100px;height:150px;font-size:14px;background-color:#34373c}
+.Bot .Copyright{margin:0 auto;padding-top:45px;width:1100px;height:auto;line-height:30px;text-align:center;color:#9897a1}
+.Bot .Copyright a{margin:0 5px;color:#9897a1}
+.Bot .Copyright a:hover{color:#fff}
+.gs-popup-mask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(//image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gs-popup-mask.cur{opacity:1;visibility:visible}
+.gs-popup{position:fixed;left:50%;top:50%;z-index:99999;-webkit-transform:translate(0,20px);-ms-transform:translate(0,20px);transform:translate(0,20px);opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gs-popup.gs-popup-abs{position:absolute}
+.gs-popup.cur{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);opacity:1;visibility:visible}
+.gs-popup .gs-popup-close{display:block;position:absolute;top:0;right:-60px;background-image:url(../gsres/csprite.png);background-position:-710px -340px;width:46px;height:47px}
+.gs-popup .gs-popup-close:hover{background-position:-814px -281px}
+.gs-popup .gs-popup-type-image{width:100%;height:100%;background:url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;background-color:rgba(0,0,0,.2)}
+.gs-popup .gs-popup-type-image img{display:block;width:100%;height:100%}
+.gs-popup .gs-popup-type-video{position:relative;width:100%;height:100%;background:url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;background-color:rgba(0,0,0,.2);overflow:hidden}
+.fx-code{position:absolute;right:40px;top:892px;padding-top:14px;width:129px;height:178px;background:url(../gsres/fx-bg.png) 0 0 no-repeat}
+.fx-code.cur{position:fixed;top:50%}
+.fx-code img{display:block;margin:0 auto 10px;width:96px;height:96px}
+.fx-code p{line-height:18px;font-size:14px;color:#fff;text-align:center}
+.zt-section1{height:966px;background:url(../gsres/bg1.jpg) center 0 no-repeat}
+.zt-section1 .container{position:relative}
+.zt-section1 .container .bdsharewrap.bdstyle-c{position:absolute;top:39px;right:0}
+.zt-section1 .container .logo_gs{display:block;position:absolute;left:0;top:42px;background-image:url(../gsres/csprite.png);background-position:-710px -185px;width:121px;height:42px}
+.zt-section1 .container .logo_gf{display:block;position:absolute;left:142px;top:33px;background-image:url(../gsres/csprite.png);background-position:-710px -121px;width:186px;height:56px}
+.zt-section1 .container .btn{display:block;position:absolute;top:578px}
+.zt-section1 .container .btn.btn1{left:115px;background-image:url(../gsres/csprite.png);background-position:0 -121px;width:347px;height:152px}
+.zt-section1 .container .btn.btn1:hover{background-position:0 -281px}
+.zt-section1 .container .btn.btn2{left:640px;background-image:url(../gsres/csprite.png);background-position:-355px -281px;width:347px;height:152px}
+.zt-section1 .container .btn.btn2:hover{background-position:-355px -121px}
+.zt-section1 .container .play{display:block;position:absolute;left:462px;top:556px;background-image:url(../gsres/csprite.png);background-position:-186px -441px;width:178px;height:186px}
+.zt-section1 .container .play:hover{background-position:0 -441px}
+.zt-section2{height:1111px;background:url(../gsres/bg2.jpg) center 0 no-repeat}
+.zt-section2 .container{position:relative;padding-top:177px}
+.zt-section2 .container .para{margin:0 auto 35px;width:1000px;height:120px}
+.zt-section2 .container .para p{line-height:30px;font-size:16px;color:#1d2b3a;text-indent:32px}
+.zt-section2 .container .box{width:1100px;height:96px}
+.zt-section2 .container .box .box-left{float:left;margin-left:84px;width:340px}
+.zt-section2 .container .box .box-right{float:left;margin-left:170px;width:340px}
+.zt-section2 .container .box h5{height:44px;line-height:44px;font-size:22px;color:#3a7fbd}
+.zt-section2 .container .box p{font-size:16px;color:#1c252d}
+.zt-section2 .container .btn{display:block;margin:22px auto 41px;background-image:url(../gsres/csprite.png);background-position:0 -635px;width:278px;height:111px}
+.zt-section2 .container .btn:hover{background-position:-372px -441px}
+.zt-section2 .container .info{margin-bottom:236px;width:1100px;height:66px;color:#1d2b3a;text-align:center}
+.zt-section2 .container .info h5{line-height:40px;font-size:30px}
+.zt-section2 .container .info p{line-height:24px;font-size:16px}
+.zt-section2 .container ul{padding-left:200px;width:900px}
+.zt-section2 .container ul li{float:left;margin-right:82px;width:178px}
+.zt-section2 .container ul li img{margin-bottom:8px;display:block;width:178px;height:89px}
+.zt-section2 .container ul li p{width:208px;margin-left:-15px;line-height:26px;font-size:16px;color:#fff;text-align:center}
+.zt-section3{height:652px;background:url(../gsres/bg3.jpg) center 0 no-repeat}
+.zt-section3 .container{padding-top:164px}
+.zt-section3 .container ul{margin-left:44px;width:1040px}
+.zt-section3 .container ul li{float:left;margin-bottom:6px;margin-right:21px;width:320px;height:214px}
+.zt-section3 .container ul li a{position:relative;display:block;width:100%;height:100%}
+.zt-section3 .container ul li a img{display:block;width:320px;height:178px}
+.zt-section3 .container ul li a span{display:block;height:36px;line-height:36px;font-size:16px;color:#d2eafa;text-align:center}
+.zt-section3 .container ul li a i{display:block;position:absolute;left:138px;top:64px;background-image:url(../gsres/csprite.png);background-position:-762px -281px;width:44px;height:51px}
+.zt-section3 .container ul li a:hover i{background-position:-710px -281px}
+.zt-section4{height:743px;background:url(../gsres/bg4.jpg) center 0 no-repeat}
+.zt-section4 .container{position:relative;padding-top:153px}
+.zt-section4 .container .hide{display:block;width:0;height:0;overflow:hidden}
+.zt-section4 .container .db{display:block;text-indent:-999em}
+.zt-section4 .container .tit_sp{background:url(../gsres/tit_sp.png) no-repeat}
+.zt-section4 .container .btn_sp{background:url(../gsres/btn_sp.png) no-repeat}
+.zt-section4 .container .box{position:relative;margin:0 auto;width:1000px}
+.zt-section4 .container .box ul{position:relative;width:1000px;height:238px}
+.zt-section4 .container .box .item{position:absolute;width:0;height:0;background:url(../gsres/lb_k.png) no-repeat 0 0;padding:25px 10px 20px;top:146px;left:377px;z-index:0;cursor:pointer}
+.zt-section4 .container .box li img{width:100%;height:100%;vertical-align:top;display:block}
+.zt-section4 .container .box li div{background-color:#000;position:relative}
+.zt-section4 .container .box li a{display:block}
+.zt-section4 .container .box p{margin:60px auto 0}
+.zt-section4 .container .info1{background-position:0 -84px;width:345px;height:40px}
+.zt-section4 .container .info2{background-position:0 -122px;width:318px;height:39px}
+.zt-section4 .container .info3{background-position:0 -160px;width:345px;height:40px}
+.zt-section4 .container .prev{z-index:999;position:absolute;display:block;width:46px;height:41px;top:160px;left:30px;background-position:0 -212px}
+.zt-section4 .container .next{z-index:999;position:absolute;display:block;width:46px;height:41px;top:160px;right:30px;background-position:-51px -212px}
+.zt-section4 .container .btnss{margin-top:225px}
+.zt-section4 .container .btnss a{display:inline;width:178px;height:50px;float:left}
+.zt-section4 .container .btn1{background-position:0 -358px;margin-left:90px}
+.zt-section4 .container .btn1.active,.zt-section4 .container .btn1:hover{background-position:-178px -358px}
+.zt-section4 .container .btn2{background-position:0 -257px;margin:0 145px}
+.zt-section4 .container .btn2.active,.zt-section4 .container .btn2:hover{background-position:-178px -257px}
+.zt-section4 .container .btn3{background-position:0 -308px}
+.zt-section4 .container .btn3.active,.zt-section4 .container .btn3:hover{background-position:-178px -308px}
+.zt-section4 .container .box pre{cursor:pointer}
+.zt-section4 .container .box video{position:absolute;width:100%;height:100%;top:0;left:0;z-index:2}
+.zt-section5{height:817px;background:url(../gsres/bg5.jpg) center 0 no-repeat}
+.zt-section5 .container{position:relative;padding-top:151px}
+.zt-section5 .container .zt-sld-wrap{position:relative;width:1100px;height:606px}
+.zt-section5 .container .zt-sld-wrap .zt-sld-arr{display:block;position:absolute;top:266px}
+.zt-section5 .container .zt-sld-wrap .zt-sld-arr.zt-sld-arr-prev{left:0;background-image:url(../gsres/csprite.png);background-position:-693px -441px;width:27px;height:74px}
+.zt-section5 .container .zt-sld-wrap .zt-sld-arr.zt-sld-arr-next{right:0;background-image:url(../gsres/csprite.png);background-position:-658px -441px;width:27px;height:74px}
+.zt-section5 .container .zt-sld-wrap .zt-sld{margin-left:44px;width:1000px;height:606px;background:url(../gsres/s5-sld.png) 0 0 no-repeat}
+.zt-section5 .container .zt-sld-wrap .zt-sld .zt-sld-con li{position:relative;padding:34px 20px;width:960px;height:538px}
+.zt-section5 .container .zt-sld-wrap .zt-sld .zt-sld-con li img{display:block;width:960px;height:538px;background:url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat}
+.zt-popup-s2{width:900px}
+.zt-popup-s2 .zt-popup-head{background-image:url(../gsres/csprite.png);background-position:0 0;width:900px;height:113px;line-height:113px;font-size:40px;color:#fff;text-align:center;font-weight:700}
+.zt-popup-s2 .zt-popup-scl{height:500px;background-color:#fff;overflow:hidden;overflow-y:auto}
+.zt-popup-s2 .zt-popup-scl .zt-popup-context{padding:35px 56px 50px}
+.zt-popup-s2 .ques-box{padding:0 0 25px}
+.zt-popup-s2 .ques-box h5{margin-bottom:5px;padding:12px 0;line-height:26px;font-size:18px;color:#333}
+.zt-popup-s2 .ques-box .ques-list .ques-sel{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;display:block;padding:5px 0 5px 30px;line-height:20px;font-size:16px;color:#333}
+.zt-popup-s2 .ques-box .ques-list .ques-sel i{display:block;position:absolute;left:2px;top:6px}
+.zt-popup-s2 .ques-box .ques-list .ques-sel i.ques-sel-sig{background-image:url(../gsres/csprite.png);background-position:-864px -210px;width:17px;height:17px}
+.zt-popup-s2 .ques-box .ques-list .ques-sel i.ques-sel-mut{background-image:url(../gsres/csprite.png);background-position:-864px -185px;width:17px;height:17px}
+.zt-popup-s2 .ques-box .ques-list .ques-sel.cur i.ques-sel-sig{background-position:-839px -210px}
+.zt-popup-s2 .ques-box .ques-list .ques-sel.cur i.ques-sel-mut{background-position:-839px -185px}
+.zt-popup-s2 .ques .ques-bot{width:900px;height:60px}
+.zt-popup-s2 .ques .ques-bot .ques-ipt{float:left;margin-left:140px;width:340px;height:60px;background-color:#e8ecf0}
+.zt-popup-s2 .ques .ques-bot .ques-ipt input{display:block;margin-left:25px;padding:20px 0;width:310px;line-height:20px;font-size:16px;color:#666;border:none;outline:0;background:0 0}
+.zt-popup-s2 .ques .ques-bot .ques-smt{display:block;float:left;margin-left:10px;width:160px;height:60px;line-height:60px;font-size:20px;color:#fff;text-align:center;font-weight:700;background-color:#3a8bd4}
+.zt-popup-s2 .ques .ques-bot .ques-smt:hover{background-color:#3f96e5}
