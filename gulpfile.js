@@ -19,7 +19,7 @@ sourcemaps = require('gulp-sourcemaps'),
     babelify = require("babelify"),
     babel = require("gulp-babel");
 //当前开发目录
-let devPath = 'projects/yzsob/';// /zhuanti/codoljxsl/
+let devPath = 'projects/0template/';// /zhuanti/codoljxsl/
 let config = {
     path:{
         root:devPath,
@@ -29,7 +29,7 @@ let config = {
         src: devPath+'src/',
         js:  devPath+'js/',
         tpl: devPath+'tpl/',
-        source: devPath+'source/',
+        res: devPath+'gsres/',
         csprite:devPath+'csprite/'
     }
 };
@@ -40,9 +40,9 @@ gulp.task('csprite',function () {
             cssName:'../scss/_csprite.scss',
             cssFormat:'scss',
             padding:8,
-            imgPath :'../source/csprite.png'
+            imgPath :'../gsres/csprite.png'
         }))
-        .pipe(gulp.dest(config.path.source))
+        .pipe(gulp.dest(config.path.res))
         .pipe(reload({stream: true}));
 });
 gulp.task('fileinclude', function() {
