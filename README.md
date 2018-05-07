@@ -18,6 +18,7 @@ git push -u origin master
 ### 文件说明
 - /gslib  
 常用公共组件
+> [说明文档](gslib/readme.md)
 - /projects  
 项目文件夹
 - /scsslib  
