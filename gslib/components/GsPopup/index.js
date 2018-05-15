@@ -115,6 +115,9 @@ let GsPopup = {
             case 'custom':
                 vDom = `<div class="gs-popup-type-custom">${$(diyOpt.sid).html()}</div>`;
                 break;
+            case 'jsCustom':
+                vDom = `<div class="gs-popup-type-jscustom" id="${diyOpt.jscid}" data-sid="${diyOpt.sid}"></div>`;
+                break;
 
         }
         return vDom
@@ -130,7 +133,7 @@ let GsPopup = {
             _this.config.hideScroll = true;
         }
         vDom += `<div class="GsPopup GsPopupClose gs-popup-mask"></div>`;
-        vDom += `<div class="GsPopup gs-popup" style="${sty.dad}">${_this.addContext(opt,diyOpt)}<a class="gs-popup-close GsPopupClose"></a></div>`;
+        vDom += `<div class="GsPopup gs-popup" style="${sty.dad}">${_this.addContext(opt,diyOpt)}<a class="gs-popup-close gs-popup-close-${diyOpt.type} GsPopupClose"></a></div>`;
         return vDom;
     },
     show(opt,diyOpt){
@@ -143,7 +146,7 @@ let GsPopup = {
                 _this.scrollDisable();
             }
         },30);
-        $('.GsPopupClose').on('click',function () {
+        $('body').on('click','.GsPopupClose',function () {
             _this.close(opt,diyOpt);
         });
     },
@@ -153,6 +156,7 @@ let GsPopup = {
             let $ts = $(this);
             diyOpt.sid = $ts.data('sid');
             diyOpt.type = $ts.data('type');
+            diyOpt.jscid = $ts.data('jscid');
             diyOpt.bindBtn = $ts;
             diyOpt.size = {
                 w:$ts.data('w'),

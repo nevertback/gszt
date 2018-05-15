@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$close-h-name: 'close-h';
+$close-h-x: 0px;
+$close-h-y: 120px;
+$close-h-offset-x: 0px;
+$close-h-offset-y: -120px;
+$close-h-width: 56px;
+$close-h-height: 56px;
+$close-h-total-width: 266px;
+$close-h-total-height: 176px;
+$close-h-image: '../gsres/csprite.png';
+$close-h: (0px, 120px, 0px, -120px, 56px, 56px, 266px, 176px, '../gsres/csprite.png', 'close-h', );
+$close-white-name: 'close-white';
+$close-white-x: 64px;
+$close-white-y: 120px;
+$close-white-offset-x: -64px;
+$close-white-offset-y: -120px;
+$close-white-width: 56px;
+$close-white-height: 56px;
+$close-white-total-width: 266px;
+$close-white-total-height: 176px;
+$close-white-image: '../gsres/csprite.png';
+$close-white: (64px, 120px, -64px, -120px, 56px, 56px, 266px, 176px, '../gsres/csprite.png', 'close-white', );
+$close-name: 'close';
+$close-x: 128px;
+$close-y: 120px;
+$close-offset-x: -128px;
+$close-offset-y: -120px;
+$close-width: 56px;
+$close-height: 56px;
+$close-total-width: 266px;
+$close-total-height: 176px;
+$close-image: '../gsres/csprite.png';
+$close: (128px, 120px, -128px, -120px, 56px, 56px, 266px, 176px, '../gsres/csprite.png', 'close', );
+$logo-gf-name: 'logo-gf';
+$logo-gf-x: 0px;
+$logo-gf-y: 0px;
+$logo-gf-offset-x: 0px;
+$logo-gf-offset-y: 0px;
+$logo-gf-width: 266px;
+$logo-gf-height: 54px;
+$logo-gf-total-width: 266px;
+$logo-gf-total-height: 176px;
+$logo-gf-image: '../gsres/csprite.png';
+$logo-gf: (0px, 0px, 0px, 0px, 266px, 54px, 266px, 176px, '../gsres/csprite.png', 'logo-gf', );
+$logo-gs-name: 'logo-gs';
+$logo-gs-x: 0px;
+$logo-gs-y: 62px;
+$logo-gs-offset-x: 0px;
+$logo-gs-offset-y: -62px;
+$logo-gs-width: 151px;
+$logo-gs-height: 50px;
+$logo-gs-total-width: 266px;
+$logo-gs-total-height: 176px;
+$logo-gs-image: '../gsres/csprite.png';
+$logo-gs: (0px, 62px, 0px, -62px, 151px, 50px, 266px, 176px, '../gsres/csprite.png', 'logo-gs', );
+$role-defense-name: 'role-defense';
+$role-defense-x: 159px;
+$role-defense-y: 62px;
+$role-defense-offset-x: -159px;
+$role-defense-offset-y: -62px;
+$role-defense-width: 31px;
+$role-defense-height: 33px;
+$role-defense-total-width: 266px;
+$role-defense-total-height: 176px;
+$role-defense-image: '../gsres/csprite.png';
+$role-defense: (159px, 62px, -159px, -62px, 31px, 33px, 266px, 176px, '../gsres/csprite.png', 'role-defense', );
+$role-offense-name: 'role-offense';
+$role-offense-x: 198px;
+$role-offense-y: 62px;
+$role-offense-offset-x: -198px;
+$role-offense-offset-y: -62px;
+$role-offense-width: 31px;
+$role-offense-height: 33px;
+$role-offense-total-width: 266px;
+$role-offense-total-height: 176px;
+$role-offense-image: '../gsres/csprite.png';
+$role-offense: (198px, 62px, -198px, -62px, 31px, 33px, 266px, 176px, '../gsres/csprite.png', 'role-offense', );
+$role-support-name: 'role-support';
+$role-support-x: 192px;
+$role-support-y: 120px;
+$role-support-offset-x: -192px;
+$role-support-offset-y: -120px;
+$role-support-width: 31px;
+$role-support-height: 33px;
+$role-support-total-width: 266px;
+$role-support-total-height: 176px;
+$role-support-image: '../gsres/csprite.png';
+$role-support: (192px, 120px, -192px, -120px, 31px, 33px, 266px, 176px, '../gsres/csprite.png', 'role-support', );
+$role-tank-name: 'role-tank';
+$role-tank-x: 231px;
+$role-tank-y: 120px;
+$role-tank-offset-x: -231px;
+$role-tank-offset-y: -120px;
+$role-tank-width: 31px;
+$role-tank-height: 33px;
+$role-tank-total-width: 266px;
+$role-tank-total-height: 176px;
+$role-tank-image: '../gsres/csprite.png';
+$role-tank: (231px, 120px, -231px, -120px, 31px, 33px, 266px, 176px, '../gsres/csprite.png', 'role-tank', );
+$spritesheet-width: 266px;
+$spritesheet-height: 176px;
+$spritesheet-image: '../gsres/csprite.png';
+$spritesheet-sprites: ($close-h, $close-white, $close, $logo-gf, $logo-gs, $role-defense, $role-offense, $role-support, $role-tank, );
+$spritesheet: (266px, 176px, '../gsres/csprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
