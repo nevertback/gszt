@@ -1,7 +1,22 @@
 Gamersky 弹窗插件
 ---
 1. html参数说明
-> data-type：videoTx1 | videoTx2 | videoYk1 | videoYk2 | image | custom  
+> data-type：videoTx1 | videoTx2 | videoYk1 | videoYk2 | image | custom | jsCustom  
+>> jsCustom  data-jscid="jsc" js动态插入的弹窗ID  data-sid 传值使用 
+
+```javascript
+/*
+* js写按钮参数
+* data-type="jsCustom" 
+* data-jscid="jsc" 
+* data-w="800" 
+* data-h="400" 
+* data-sid="1"
+*/
+var sid = $('#jsc').data('sid');
+//1
+```
+
 > data-sid: 视频地址|图片地址|自定义层选择符  
 > data-w: 弹窗宽度  
 > data-h: 弹窗高度
@@ -105,5 +120,6 @@ GsPopup.init({
 		background-color: rgba(0,0,0,0.2);
 		overflow: hidden;
 	}
+	.gs-popup-type-jscustom{}
 }
 ```
