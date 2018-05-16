@@ -1,0 +1,500 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 1060px;
+	background:url(../gsres/bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 34px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 157px;
+			top: 6px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 866px;
+			&.btn1{
+				left: 231px;
+				@include sprite($s1-btn1);
+				&:hover{@include sprite-position($s1-btn1-h);}
+			}
+			&.btn2{
+				left: 494px;
+				@include sprite($s1-btn2);
+				&:hover{@include sprite-position($s1-btn2-h);}
+			}
+			&.btn3{
+				left: 757px;
+				@include sprite($s1-btn3);
+				&:hover{@include sprite-position($s1-btn3-h);}
+			}
+		}
+		.play{
+			display: block;
+			position: absolute;
+			left: 525px;
+			top: 675px;
+			@include sprite($s1-play);
+		}
+	}
+}
+.zt-section2{
+	height: 500px;
+	background:url(../gsres/bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 34px;
+		height: 500px - 34px;
+		.tit{
+			position: absolute;
+			left: 225px;
+			top: 15px;
+			@include sprite($s2-tit);
+		}
+		.video-area{
+			position: relative;
+			margin: 0 auto;
+			width: 800px;
+			height: 469px;
+			.video-area-bg{
+				display: block;
+			}
+			.video-area-main{
+				position: absolute;
+				left: 25px;
+				top: 21px;
+				width: 750px;
+				height: 419px;
+			}
+			.s2-video-play{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				i{
+					display: block;
+					position: absolute;
+					left: 328px;
+					top: 164px;
+					@include sprite($s2-play);
+				}
+				&:hover{
+					i{
+						@include sprite-position($s2-play-h);
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 1250px;
+	background:url(../gsres/bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 24px;
+		.tit{
+			margin: 0 auto 24px;
+			@include sprite($s3-tit);
+		}
+		.para{
+			margin: 0 auto 18px;
+			width: 852px;
+			height: 210px;
+			p{
+				line-height: 30px;
+				font-size: 15px;
+				color: #9f9aa9;
+				text-indent: 30px;
+			}
+		}
+		.time{
+			margin-bottom: 64px;
+			height: 34px;
+			line-height: 34px;
+			font-size: 15px;
+			color: #d8d3e2;
+			text-align: center;
+			font-weight: bold;
+		}
+		.dialog{
+			margin-left: 414px;
+			margin-bottom: 100px;
+			width: 375px;
+			height: 119px;
+			line-height: 119px;
+			font-size: 26px;
+			color: #483d58;
+			font-weight: bold;
+			text-align: center;
+		}
+		.vote-area{
+			position: relative;
+			margin: 0 auto;
+			width: 800px;
+			.vote-btn{
+				display: block;
+				position: absolute;
+				top: 76px;
+				&.vote-btn-agree{
+					left: 76px;
+					@include sprite($s3-btn-yes);
+					&:hover{@include sprite-position($s3-btn-yes-h);}
+				}
+				&.vote-btn-disagree{
+					left: 415px;
+					@include sprite($s3-btn-no);
+					&:hover{@include sprite-position($s3-btn-no-h);}
+				}
+			}
+			.vote-progress-wrap{
+				position: relative;
+				width: 800px;
+				height: 54px;
+				background: url(../gsres/progress-bg.png) 0 0 no-repeat;
+				.vote-num{
+					position: absolute;
+					top: 0;
+					width: 170px;
+					height: 50px;
+					line-height: 50px;
+					font-size: 20px;
+					font-weight: bold;
+					span{
+						margin-right: 5px;
+					}
+					&.vote-num-agree{
+						right: 812px;
+						text-align: right;
+						color: #8ee31f;
+					}
+					&.vote-num-disagree{
+						left: 812px;
+						color: #ff333e;
+					}
+				}
+				.vote-progress{
+					position: absolute;
+					left: 4px;
+					top: 4px;
+					width: 792px;
+					height: 43px;
+					background: url(../gsres/progress-no.png) 0 0 no-repeat;
+					.vote-progress-bar{
+						width: 0;
+						height: 43px;
+						background: url(../gsres/progress-yes.png) 0 0 no-repeat;
+						transition:width 0.25s ease;
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 880px;
+	background:url(../gsres/bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 39px;
+		.tit{
+			margin-left: 344px;
+			@include sprite($s4-tit);
+		}
+		.hero-area{
+			padding-left: 226px;
+			padding-top: 49px;
+			ul{
+				width: 800px;
+				li{
+					float: left;
+					margin-right: 24px;
+					margin-bottom: 24px;
+					width: 131px;
+					height: 120px;
+					a{
+						position: relative;
+						display: block;
+						width: 131px;
+						height: 120px;
+						img{
+							display: block;
+							width: 100%;
+							height: 100%;
+							&.hero-head{}
+							&.hero-head-hover{
+								position: absolute;
+								left: 0;
+								top: 0;
+								opacity: 0;
+								visibility: hidden;
+								transition:all 0.25s ease;
+							}
+						}
+						&:hover{
+							img.hero-head-hover{
+								opacity: 1;
+								visibility: visible;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.zt-section5{
+	height: 917px;
+	background:url(../gsres/bg5.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 38px;
+		.tit{
+			margin-left: 316px;
+			@include sprite($s5-tit);
+		}
+		.sp {
+			background: url(../gsres/comm.png) no-repeat;
+		}
+		.sld-area{
+			padding-top: 70px;
+			.slide-box {
+				position: relative;
+				width: 1100px;
+				margin: 0 auto;
+			}
+
+			.slide-list {
+				width: 1000px;
+				position: relative;
+				top: 0;
+				left: 0;
+				list-style: none;
+				height: 559px;
+				margin: 0 auto;
+				perspective: 500px;
+				li {
+					position: absolute;
+					width: 374px;
+					height: 559px;
+					transition: all .5s;
+					img{
+						display: block;
+						max-width: 100%;
+					}
+				}
+			}
+
+			.slide-box li {
+				&.po-1 {
+					left: 60px;
+					top: 60px;
+					z-index: 1;
+					width: 300px;
+					transform: rotateY(10deg);
+					-webkit-transform: perspective(500px) rotateY(10deg);
+				}
+				&.po-2 {
+					width: 340px;
+					left: 150px;
+					top: 32px;
+					z-index: 4;
+					transform: rotateY(8deg);
+					-webkit-transform: rotateY(8deg);
+				}
+				&.po-3 {
+					top: 0;
+					left: 315px;
+					z-index: 5;
+				}
+				&.po-4 {
+					width: 340px;
+					left: 530px;
+					top: 32px;
+					transform: rotateY(-8deg);
+					-webkit-transform: rotateY(-8deg);
+					z-index: 4;
+				}
+				&.po-5 {
+					left: 650px;
+					top: 60px;
+					width: 300px;
+					transform: rotateY(-10deg);
+					-webkit-transform: perspective(500px) rotateY(-10deg);
+				}
+			}
+
+			.trans-left, .trans-right {
+				width: 340px;
+				height: 508px;
+				position: absolute;
+				top: 0;
+				z-index: 10;
+				cursor: pointer;
+			}
+
+			.trans-left {
+				left: 0;
+			}
+
+			.trans-right {
+				right: 0;
+			}
+
+			.prev, .next {
+				display: block;
+				width: 47px;
+				height: 98px;
+				position: absolute;
+				top: 200px;
+				cursor: pointer;
+			}
+
+			.prev {
+				background-position: -161px 0;
+				left: 0;
+			}
+
+			.next {
+				background-position: -302px 0;
+				right: 0;
+			}
+
+			.dot-list {
+				width: 155px;
+				margin: 25px auto 40px;
+				overflow: hidden;
+				li {
+					width: 25px;
+					height: 24px;
+					background-position: 0 -1px;
+					float: left;
+					margin: 0 3px;
+					&.cur {
+						background-position: -39px -1px;
+					}
+				}
+			}
+		}
+	}
+}
+.vote-pop-mask{
+	display: none;
+	position: fixed;z-index: 99998;top: 0;left: 0;
+	width: 100%;height: 100%;
+	background:url(//image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+	&.cur{
+		display: block;
+	}
+}
+.vote-pop{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.9);
+	z-index: 99999;
+	transform:translate(0,20px);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.25s ease;
+	&.cur{
+		transform:translate(0,0);
+		opacity: 1;
+		visibility: visible;
+	}
+	.vote-pop-close{
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include sprite($close);
+		background-color: #fff;
+		&:hover {
+			@include sprite-position($close);
+			background-color: #eee;
+		}
+	}
+	&.vote-pop-alert{
+		margin-left: -392px;
+		margin-top: -57px;
+		width: 784px;
+		height: 114px;
+		background: url(../gsres/vote-pop-alert.png) 0 0 no-repeat;
+		.vote-pop-alert-main{
+			padding: 25px 0;
+			height: 64px;
+			p{
+				line-height: 64px;
+				font-size: 36px;
+				color: #251e34;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+	&.vote-pop-email{
+		margin-left: -467px;
+		margin-top: -155px;
+		width: 933px;
+		height: 310px;
+		background: url(../gsres/vote-pop-email.png) 0 0 no-repeat;
+		.vote-pop-email-main{
+			padding-top: 99px;
+			.vote-pop-form{
+				.vpf-row{
+					label{
+						display: block;
+						float: left;
+						margin-right: 25px;
+						width: 185px;
+						height: 54px;
+						line-height: 54px;
+						font-size: 20px;
+						color: #251e34;
+						font-weight: bold;
+						text-align: right;
+					}
+					.vpf-ipt{
+						float: left;
+						width: 603px;
+						height: 52px;
+						background-color: #fff;
+						border: 1px solid #473c57;
+						input{
+							display: block;
+							padding: 0 20px;
+							width: 603px - 40px;
+							height: 52px;
+							line-height: 52px;
+							font-size: 17px;
+							color: #4c425c;
+						}
+					}
+				}
+				.vpf-smt{
+					display: block;
+					margin-left: 330px;
+					margin-top: 30px;
+					@include sprite($vote-pop-smt);
+					&:hover{@include sprite-position($vote-pop-smt-h);}
+				}
+			}
+		}
+	}
+}
