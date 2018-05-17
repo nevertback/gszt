@@ -148,7 +148,7 @@
                     } else if (cate === 'telephone') {
                         bValidate = RegExp(/^1\d{10}$/).test(iptcon);
                     } else if (cate === 'email') {
-                        bValidate = RegExp(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/).test(iptcon);
+                        bValidate = RegExp(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@qq\.[a-zA-Z]{2,3}$/gi).test(iptcon);
                     }
                     return bValidate;
                 }
@@ -163,7 +163,7 @@
                     return false;
                 }
                 if (verifIpt(userNum, 'email') === false) {
-                    alert("请输入有效的邮箱");
+                    alert("请输入有效的QQ邮箱");
                     return false;
                 }
                 if ($.trim(userCon) === '') {
