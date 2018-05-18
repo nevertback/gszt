@@ -31,9 +31,7 @@
                 GsPopup.init({
                     tar: '.popupPicBtn',
                     fnc: {
-                        after: function after() {
-                            console.log('opened this');
-                        }
+                        after: function after() {}
                     }
                 });
             }

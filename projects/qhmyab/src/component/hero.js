@@ -15,7 +15,6 @@ let hero = {
             tar:'.popupPicBtn',
             fnc:{
                 after(){
-                    console.log('opened this')
                 }
             }
         });
