@@ -12,3 +12,6 @@
 
 * [GsForbiddenIE 屏蔽低版本IE，友好提示](components/GsForbiddenIE/)   
 > 路径：components/GsForbiddenIE/
+
+* [GsFixCell 浮动跟随插件](components/GsFixCell/)   
+> 路径：components/GsFixCell/
