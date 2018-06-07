@@ -1,0 +1,118 @@
+.bdsharewrap.bdstyle-c{width:242px;height:36px;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox{width:800px;height:36px;*font-size:0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox.before,.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{display:table;content:" "}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox:after{clear:both}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a{float:left;margin:0 4px 0 0;padding:0;display:inline-block;*display:inline;*zoom:1;width:37px;height:36px;background:url(http://image.gamersky.com/webimg13/zhuanti/cf8zn/fx.png) 0 0 no-repeat}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tsina{background-position:0 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_weixin{background-position:-40px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_qzone{background-position:-80px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_renren{background-position:-121px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_sqq{background-position:-161px 0}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-200px 0;text-indent:9999px;white-space:nowrap;overflow:hidden}
+.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_douban,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more,.bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_tieba{display:none}
+body,html{min-width:1280px;background-color:#ededed}
+body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}
+h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}
+a{text-decoration:none;cursor:pointer}
+.clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}
+.clearfix:after,.container:after{clear:both}
+.container{margin-right:auto;margin-left:auto;width:1000px}
+.zt-section{margin:0;padding:0;overflow:hidden;width:100%;min-width:1000px}
+.QZnav{min-width:1000px}
+.QZnav .topbar{width:1000px}
+.QZnav .QZ-nav{display:none}
+.Bot{width:100%;min-width:1000px;height:155px;font-size:14px;background-color:#111}
+.Bot .Copyright{margin:0 auto;padding-top:50px;width:1000px;height:auto;line-height:30px;text-align:center;color:#555}
+.Bot .Copyright a{margin:0 5px;color:#555}
+.Bot .Copyright a:hover{color:#777}
+.gs-popup-mask{position:fixed;z-index:99998;top:0;left:0;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gs-popup-mask.cur{opacity:1;visibility:visible}
+.gs-popup{position:fixed;left:50%;top:50%;z-index:99999;-webkit-transform:translate(0,20px);-ms-transform:translate(0,20px);transform:translate(0,20px);opacity:0;visibility:hidden;-webkit-transition:all .25s ease;transition:all .25s ease}
+.gs-popup.gs-popup-abs{position:absolute}
+.gs-popup.cur{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);opacity:1;visibility:visible}
+.gs-popup .gs-popup-close{display:block;position:absolute;top:0;right:-42px;background-image:url(../gsres/csprite.png);background-position:-250px -63px;width:35px;height:35px;-webkit-transition:-webkit-transform .25s ease;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}
+.gs-popup .gs-popup-close:hover{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.gs-popup .gs-popup-type-image{width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;background-color:rgba(0,0,0,.2)}
+.gs-popup .gs-popup-type-image img{display:block;width:100%;height:100%}
+.gs-popup .gs-popup-type-video{position:relative;width:100%;height:100%;background:url(http://image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;background-color:rgba(0,0,0,.2);overflow:hidden}
+.title-lev1{height:50px;line-height:50px;background:url(../gsres/title-lev1.png) center center no-repeat;font-size:30px;color:#454545;text-align:center;font-weight:700}
+.title-lev1.dark{background-image:url(../gsres/title-lev1-dark.png);color:#fff}
+.title-lev2{height:30px;line-height:30px;background:url(../gsres/title-lev2.png) center center no-repeat;font-size:20px;color:#454545;text-align:center;font-weight:700}
+.zt-section1{height:554px;background:url(../gsres/bg1.jpg) center 0 no-repeat}
+.zt-section1 .container{position:relative;height:554px}
+.zt-section1 .container .bdsharewrap.bdstyle-c{position:absolute;top:30px;right:0}
+.zt-section1 .container .logo_gs{display:block;position:absolute;left:0;top:26px;background-image:url(../gsres/csprite.png);background-position:0 -53px;width:139px;height:45px}
+.zt-section1 .container .logo_gf{display:block;position:absolute;left:164px;top:27px;background-image:url(../gsres/csprite.png);background-position:0 0;width:242px;height:45px}
+.zt-section1 .container .btn-play{display:block;position:absolute;top:324px;left:458px;background-image:url(../gsres/csprite.png);background-position:-250px 0;width:67px;height:55px}
+.zt-section1 .container .btn-play:hover{background-position:-116px -106px}
+.zt-section1 .container .area-time{position:absolute;left:100px;top:393px;width:425px;height:28px;line-height:28px;font-size:18px;color:#fff;text-align:center;font-style:italic}
+.zt-section1 .container .area-btn-group{position:absolute;left:0;bottom:0;width:1000px;height:59px;background-color:#000}
+.zt-section1 .container .area-btn-group .btn-group{width:1010px;height:59px}
+.zt-section1 .container .area-btn-group .btn-group a{display:block;float:left;margin-right:1px;width:249px;height:59px;line-height:59px;font-size:22px;font-weight:700;color:#f7f7f7;text-align:center;background-color:#565656}
+.zt-section1 .container .area-btn-group .btn-group a:hover{background-color:#787878}
+.zt-section1 .container .area-btn-group .btn-group a.btn-download{width:250px;background-color:#7aeb00;color:#2a2d38}
+.zt-section1 .container .area-btn-group .btn-group a.btn-download:hover{background-color:#abf300}
+.zt-section2{height:692px}
+.zt-section2 .container{position:relative;padding-top:72px}
+.zt-section2 .container .para{padding:50px 0}
+.zt-section2 .container .para p{line-height:26px;font-size:16px;color:#848484;text-indent:32px}
+.zt-section2 .container .boxs{width:1030px}
+.zt-section2 .container .boxs .box{float:left;margin-right:20px;width:490px}
+.zt-section2 .container .boxs .box .box-main{margin-top:10px;height:204px;background-color:#fff}
+.zt-section2 .container .boxs .box .box-main p{padding:28px 30px 25px;line-height:26px;font-size:16px;color:#848484;text-indent:32px}
+.zt-section2 .container .boxs .box .box-main .btn-group{padding-left:30px;width:450px}
+.zt-section2 .container .boxs .box .box-main .btn-group a{display:block;float:left;margin-right:14px;width:206px;height:50px;line-height:50px;font-size:18px;color:#fff;text-align:center;background-color:#4b4b4b}
+.zt-section2 .container .boxs .box .box-main .btn-group a:hover{background-color:#696969}
+.zt-section2 .container .boxs .box .box-main .btn-group a.btn-green{background-color:#7aeb00;color:#2a2d38}
+.zt-section2 .container .boxs .box .box-main .btn-group a.btn-green:hover{background-color:#abf300}
+.team-pop-mask{position:absolute;left:0;top:0;width:100%;height:100%;background:url(//image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat}
+.team-pop{position:absolute;left:50%;top:183px;margin-left:-273px;padding:70px 35px 45px;width:475px;min-height:360px;background:url(../gsres/opt95.png) 0 0 repeat}
+.team-pop .team-logo{position:absolute;top:-8px;right:-44px;width:249px;height:258px;background:url(../gsres/teams-pop.png) 0 0 no-repeat}
+.team-pop.team-pop0 .team-logo{background-position:0 0}
+.team-pop.team-pop1 .team-logo{background-position:-250px 0}
+.team-pop.team-pop2 .team-logo{background-position:-500px 0}
+.team-pop.team-pop3 .team-logo{background-position:-750px 0}
+.team-pop.team-pop4 .team-logo{background-position:0 -259px}
+.team-pop.team-pop5 .team-logo{background-position:-250px -259px}
+.team-pop.team-pop6 .team-logo{background-position:-500px -259px}
+.team-pop.team-pop7 .team-logo{background-position:-750px -259px}
+.team-pop .team-pop-title{height:58px;border-left:8px solid #848484}
+.team-pop .team-pop-title span{display:block;padding-left:25px;color:#1d2029}
+.team-pop .team-pop-title span.chs{margin-bottom:6px;height:30px;line-height:30px;font-size:30px;font-weight:700}
+.team-pop .team-pop-title span.en{height:22px;line-height:22px;font-size:18px;text-transform:uppercase}
+.team-pop .team-pop-des{padding-top:65px}
+.team-pop .team-pop-des p{line-height:24px;font-size:14px;color:#848484;text-indent:28px}
+.team-pop .team-pop-close{display:block;position:absolute;right:-44px;top:0;background-image:url(../gsres/csprite.png);background-position:-250px -63px;width:35px;height:35px;-webkit-transition:-webkit-transform .25s ease;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}
+.team-pop .team-pop-close:hover{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.zt-section3{position:relative;height:800px;background-color:#1d2029}
+.zt-section3 .container{position:relative;padding-top:74px}
+.zt-section3 .container .area-box{padding-top:46px;width:1000px;height:517px}
+.zt-section3 .container .area-box .box .item .btn-team{position:relative;display:block;float:left;margin-right:1px;margin-bottom:1px;width:249px;height:258px;background-color:#272a32}
+.zt-section3 .container .area-box .box .item .btn-team span{display:block;position:absolute;left:0;width:100%;text-align:center}
+.zt-section3 .container .area-box .box .item .btn-team .tit-chs{top:172px;height:26px;line-height:26px;font-size:16px;color:#fff}
+.zt-section3 .container .area-box .box .item .btn-team .tit-en{top:198px;height:16px;line-height:16px;font-size:10px;color:#848484}
+.zt-section3 .container .area-box .box .item .btn-team i{display:block;width:100%;height:100%;background:url(../gsres/teams.png) 0 0 no-repeat}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team0 i{background-position:0 0}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team1 i{background-position:-250px 0}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team2 i{background-position:-500px 0}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team3 i{background-position:-750px 0}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team4 i{background-position:0 -259px}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team5 i{background-position:-250px -259px}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team6 i{background-position:-500px -259px}
+.zt-section3 .container .area-box .box .item .btn-team.btn-team7 i{background-position:-750px -259px}
+.zt-section3 .container .area-box .box .item .btn-team:hover{background-color:#30343e}
+.zt-section3 .container .tips{padding-top:20px;height:30px;line-height:30px;font-size:14px;color:#7aeb00;text-align:center}
+.zt-section4{height:813px}
+.zt-section4 .container{position:relative;padding-top:70px}
+.zt-section4 .container .zt-sld-wrap{position:relative;margin-top:46px;width:1000px;height:576px}
+.zt-section4 .container .zt-sld-wrap .zt-sld-arr{display:block;position:absolute;top:232px}
+.zt-section4 .container .zt-sld-wrap .zt-sld-arr.zt-sld-arr-prev{left:27px;background-image:url(../gsres/csprite.png);background-position:-58px -106px;width:50px;height:112px}
+.zt-section4 .container .zt-sld-wrap .zt-sld-arr.zt-sld-arr-next{right:27px;background-image:url(../gsres/csprite.png);background-position:0 -106px;width:50px;height:112px}
+.zt-section4 .container .zt-sld-wrap .zt-sld{width:1000px;height:576px}
+.zt-section4 .container .zt-sld-wrap .zt-sld .zt-sld-con li{position:relative;width:1000px;height:576px}
+.zt-section4 .container .zt-sld-wrap .zt-sld .zt-sld-con li img{display:block;width:1000px;height:576px;background:#ddd url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat}
+.zt-section5{height:305px}
+.zt-section5 .container{position:relative}
+.zt-section5 .container .box{padding-top:33px;width:1000px;height:226px;background-color:#dedee4}
+.zt-section5 .container .box ul{padding:16px 0 0 295px;width:680px}
+.zt-section5 .container .box ul li{line-height:22px;font-size:14px;color:#848484}

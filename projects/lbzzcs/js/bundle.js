@@ -331,7 +331,7 @@
          */
         var s2 = require('./component/s2.js'),
             s4 = require('./component/s4.js'),
-            s5 = require('./component/s5.js'),
+            s5 = require('./component/s4.js'),
             fixcode = require('./component/fixcode.js');
         s2.init();
         s5.init();

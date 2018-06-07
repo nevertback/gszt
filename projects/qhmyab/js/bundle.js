@@ -314,7 +314,7 @@
          */
         var vote = require('./component/vote.js');
         var hero = require('./component/hero.js');
-        var s5 = require('./component/s5.js');
+        var s5 = require('./component/s4.js');
         vote.init(GsPopup);
         hero.init(GsPopup);
         s5();

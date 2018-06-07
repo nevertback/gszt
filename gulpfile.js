@@ -19,7 +19,7 @@ sourcemaps = require('gulp-sourcemaps'),
     babelify = require("babelify"),
     babel = require("gulp-babel");
 //当前开发目录
-let devPath = 'projects/qhmyab/';// /zhuanti/0template/
+let devPath = 'projects/fo4bxh/';// /zhuanti/0template/
 let config = {
     path:{
         root:devPath,

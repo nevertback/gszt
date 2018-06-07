@@ -1,0 +1,367 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 554px;
+	background:url(../gsres/bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+        height: 554px;
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 26px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 164px;
+			top: 27px;
+			@include sprite($logo-gf);
+		}
+		.btn-play{
+			display: block;
+			position: absolute;
+			top: 324px;
+			left: 458px;
+			@include sprite($s1-play);
+			&:hover{@include sprite-position($s1-play-h);}
+		}
+        .area-time{
+            position: absolute;
+            left: 100px;
+            top: 393px;
+            width: 425px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            font-style: italic;
+        }
+        .area-btn-group{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 1000px;
+            height: 59px;
+            background-color: #000;
+            .btn-group{
+                width: 1010px;
+                height: 59px;
+                a{
+                    display: block;
+                    float: left;
+                    margin-right: 1px;
+                    width: 249px;
+                    height: 59px;
+                    line-height: 59px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: #f7f7f7;
+                    text-align: center;
+                    background-color: #565656;
+                    &:hover{
+                        background-color: #787878;
+                    }
+                    &.btn-download{
+                        width: 250px;
+                        background-color: #7aeb00;
+                        color: #2a2d38;
+                        &:hover{
+                            background-color: #abf300;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+.zt-section2{
+	height: 692px;
+    .container{
+        position: relative;
+        padding-top: 72px;
+        .para{
+            padding: 50px 0;
+            p{
+                line-height: 26px;
+                font-size: 16px;
+                color: #848484;
+                text-indent: 32px;
+            }
+        }
+        .boxs{
+            width: 1030px;
+            .box{
+                float: left;
+                margin-right: 20px;
+                width: 490px;
+                .box-main{
+                    margin-top: 10px;
+                    height: 204px;
+                    background-color: #fff;
+                    p{
+                        padding:28px 30px 25px;
+                        line-height: 26px;
+                        font-size: 16px;
+                        color: #848484;
+                        text-indent: 32px;
+                    }
+                    .btn-group{
+                        padding-left: 30px;
+                        width: 450px;
+                        a{
+                            display: block;
+                            float: left;
+                            margin-right: 14px;
+                            width: 206px;
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 18px;
+                            color: #fff;
+                            text-align: center;
+                            background-color: #4b4b4b;
+                            &:hover{
+                                background-color: #696969;
+                            }
+                            &.btn-green{
+                                background-color: #7aeb00;
+                                color: #2a2d38;
+                                &:hover{
+                                    background-color: #abf300;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.team-pop-mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(//image.gamersky.com/webimg13/zhuanti/common/blank.png) 0 0 repeat;
+}
+.team-pop{
+    position: absolute;
+    left: 50%;
+    top: 183px;
+    margin-left: -273px;
+    padding: 70px 35px 45px;
+    width: 475px;
+    min-height: 360px;
+    background: url(../gsres/opt95.png) 0 0 repeat;
+    .team-logo{
+        position: absolute;
+        top: -8px;
+        right: -44px;
+        width: 249px;
+        height: 258px;
+        background: url(../gsres/teams-pop.png) 0 0 no-repeat;
+    }
+    @for $i from 0 through 3{
+        &.team-pop#{$i}{
+            .team-logo{background-position: -#{$i*250}px 0;}
+        }
+    }
+    @for $i from 4 through 7{
+        &.team-pop#{$i}{
+            .team-logo{background-position: -#{($i - 4)*250}px -259px;}
+        }
+    }
+    .team-pop-title{
+        height: 58px;
+        border-left: 8px solid #848484;
+        span{
+            display: block;
+            padding-left: 25px;
+            color: #1d2029;
+            &.chs{
+                margin-bottom: 6px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            &.en{
+                height: 22px;
+                line-height: 22px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .team-pop-des{
+        padding-top: 65px;
+        p{
+            line-height: 24px;
+            font-size: 14px;
+            color: #848484;
+            text-indent: 28px;
+        }
+    }
+    .team-pop-close{
+        display: block;
+        position: absolute;
+        right: -44px;
+        top: 0;
+        @include sprite($close);
+        transition:transform 0.25s ease;
+        &:hover {
+            transform:rotate(180deg);
+        }
+    }
+}
+.zt-section3{
+    position: relative;
+	height: 800px;
+    background-color: #1d2029;
+    .container{
+        position: relative;
+        padding-top: 74px;
+        .area-box{
+            padding-top: 46px;
+            width: 1000px;
+            height: 517px;
+            .box{
+                .item{
+                    .btn-team{
+                        position: relative;
+                        display: block;
+                        float: left;
+                        margin-right: 1px;
+                        margin-bottom: 1px;
+                        width: 249px;
+                        height: 258px;
+                        background-color: #272a32;
+                        span{
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .tit-chs{
+                            top: 172px;
+                            height: 26px;
+                            line-height: 26px;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                        .tit-en{
+                            top: 198px;
+                            height: 16px;
+                            line-height: 16px;
+                            font-size: 10px;
+                            color: #848484;
+                        }
+                        i{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background: url(../gsres/teams.png) 0 0 no-repeat;
+                        }
+                        @for $i from 0 through 3{
+                            &.btn-team#{$i}{
+                                i{background-position: -#{$i*250}px 0;}
+                            }
+                        }
+                        @for $i from 4 through 7{
+                            &.btn-team#{$i}{
+                                i{background-position: -#{($i - 4)*250}px -259px;}
+                            }
+                        }
+                        &:hover{
+                            background-color: #30343e;
+                        }
+                    }
+                }
+            }
+        }
+        .tips{
+            padding-top: 20px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #7aeb00;
+            text-align: center;
+        }
+    }
+}
+.zt-section4{
+	height: 813px;
+    .container{
+        position: relative;
+        padding-top: 70px;
+        .zt-sld-wrap{
+            position: relative;
+            margin-top: 46px;
+            width: 1000px;
+            height: 576px;
+            .zt-sld-arr{
+                display: block;
+                position: absolute;
+                top: 232px;
+                &.zt-sld-arr-prev{
+                    left: 27px;
+                    @include sprite($arr-prev);
+                }
+                &.zt-sld-arr-next{
+                    right: 27px;
+                    @include sprite($arr-next);
+                }
+            }
+            .zt-sld{
+                width: 1000px;
+                height: 576px;
+                .zt-sld-con{
+                    li{
+                        position: relative;
+                        width: 1000px;
+                        height: 576px;
+                        img{
+                            display: block;
+                            width: 1000px;
+                            height: 576px;
+                            background:#ddd url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.zt-section5{
+	height: 305px;
+    .container{
+        position: relative;
+        .box{
+            padding-top: 33px;
+            width: 1000px;
+            height: 259px - 33px;
+            background-color: #dedee4;
+            ul{
+                padding: 16px 0 0 295px;
+                width: 680px;
+                li{
+                    line-height: 22px;
+                    font-size: 14px;
+                    color: #848484;
+                }
+            }
+        }
+    }
+}
+
+
