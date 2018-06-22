@@ -43,7 +43,7 @@
         /*
          * 使用当前专题组件
          */
-        var test = require('./component/test.js');
+        var test = require('./component/s4.js');
         test();
     }, { "./component/test.js": 1, "gslib/components/GsPopup": 3 }], 3: [function (require, module, exports) {
         /*

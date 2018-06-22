@@ -1,0 +1,29 @@
+@keyframes flowArr {
+    0%{
+        transform:translate(0,-5px);
+    }
+    100%{
+        opacity: 0.2;
+        transform:translate(0,5px);
+    }
+}
+@keyframes UpAndDown {
+    0%{
+        transform:translate(0,0);
+    }
+    50%{
+        transform:translate(0,-38px);
+    }
+    100%{
+        transform:translate(0,0);
+    }
+}
+@keyframes toUpHide {
+    0%{
+        transform:translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        transform:translate(0,-30px) scale(0.9);
+    }
+}

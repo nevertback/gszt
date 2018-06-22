@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="format-detection" content="telephone=no">
+	<title>@@tkd.title</title>
+	<meta name="keywords" content="@@tkd.keywords">
+	<meta name="description" content="@@tkd.description">
+	<meta itemprop="name" content="@@tkd.title" />
+	<meta itemprop="image" content="gsres/350.jpg" />
+	<link href="//j.gamersky.com/g/normalize.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="//j.gamersky.com/web2015/css/QZnav.css" />
+	<link href="css/style.min.css" rel="stylesheet" inline>
+	<script type="text/javascript" src="//j.gamersky.com/g/jquery-1.8.3.js"></script>
+	<!-- 创建时间：@@htmlInfos.createTime 设计：@@htmlInfos.des 前端：@@htmlInfos.dev -->
+</head>
+<body>
+<!-- 全站导航 -->
+<script type="text/javascript" src="//www.gamersky.com/autoinc/allsite/allsite_nav_js.htm"></script>
+<div style="width:0;height:0;overflow:hidden">
+	<h3>@@tkd.title</h3>
+	<p>@@tkd.description</p>
+	<img src="gsres/350.jpg" alt="@@tkd.title">
+</div>
+@@include('main.html')
+<div class="Bot">
+	<script type="text/javascript" src="//www.gamersky.com/autoinc/allsite/allsite_copyright_2_js.htm"></script>
+</div>
+<span id="countn" generalId="@@countId" style="display:none;"></span>
+<script src="//j.gamersky.com/g/jquery.gamersky.v4.min.js"></script>
+<script src="//j.gamersky.com/g/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    var Gallery=function(){function e(){var e=$.browser;return 1==e.msie?e.version:11}function l(e){var l=e.options,i=l.galleryContainer.find(".gallery_item"),t=i.length,n=i.width(),a=i.height();if(t==l.slidesPerView){var o=l.galleryContainer.html();l.galleryContainer.append(o),i=l.galleryContainer.find(".gallery_item")}i.each(function(){$(this).css("margin-left",-n/2),$(this)[0].style[g+"ransitionDuration"]=l.speed+"ms"}),e.options.galleryContainer.css({width:n*l.slidesPerView,height:a}),r(e,l.initialSlide)}function t(e){{var l=e.options.galleryContainer;e.options.galleryContainer.find(".gallery_item").length}e.fs=l.find(".gallery_active"),e.rm=l.find(".gallery_right_middle"),e.rb=l.find(".gallery_right_back"),e.lm=l.find(".gallery_left_middle"),e.lb=l.find(".gallery_left_back")}function n(e){var l=e.options,i=l.galleryContainer.find(".gallery_item"),t=i.length,n=$(l.gallery_prev),r=$(l.gallery_next);if(n.length>0&&n.click(function(){e.lm.click()}),r.length>0&&r.click(function(){e.rm.click()}),l.galleryContainer.on("click",".gallery_item",function(){var l=$(this),i=l.index();e.toSlide(i)}),l.autoPlay){setInterval(function(){var l=$(".gallery_active").index();l=(l+1)%t,e.toSlide(l)},l.autoPlay)}}function r(l,i,n){var r=l.options,o=r.galleryContainer.find(".gallery_item"),d=o.length;o.eq(i).addClass("gallery_active");var g=(i+1)%d;o.eq(g).addClass("gallery_right_middle");var f=(i-1+d)%d;if(o.eq(f).addClass("gallery_left_middle"),5==r.slidesPerView){var y=(i+2)%d;o.eq(y).addClass("gallery_right_back");var c=(i-2+d)%d;o.eq(c).addClass("gallery_left_back")}t(l),e()<10&&"number"==typeof n&&((i>n&&0!=i||0==i&&n==d-1)&&(o.removeClass("z-index3 z-index2"),l.rm.addClass("z-index2"),l.lm.addClass("z-index3")),(n>i&&i!=d-1||i==d-1&&0==n)&&(o.removeClass("z-index3 z-index2"),l.lm.addClass("z-index2"),l.rm.addClass("z-index3"))),s(l),5==r.slidesPerView?a([i,g,y,f,c],l):a([i,g,f],l)}function a(e,l){for(var i=l.options,t=i.galleryContainer.find(".gallery_item"),n=t.length,r=0;n>r;r++)$.inArray(r,e)>-1||o(l,t.eq(r),0,0,8*i.depth)}function o(e,l,i,t,n){if(l[0].style[g+"ransform"]="translate3d("+-t+"px,0,"+-n+"px) rotateX(0deg) rotateY("+i+"deg)",!g){var r=-e.options.galleryContainer.find(".gallery_item").width();l.animate({"margin-left":r/2-t},e.options.speed,"linear")}}function s(e){{var l=e.options,i=l.galleryContainer,t=i.find(".gallery_item"),n=t.width();t.height()}o(e,i.find(".gallery_left_middle"),l.rotate,n+l.stretch,l.depth),o(e,i.find(".gallery_active"),0,0,0),o(e,i.find(".gallery_right_middle"),-l.rotate,-n-l.stretch,l.depth),5==l.slidesPerView&&(o(e,i.find(".gallery_left_back"),1.4*l.rotate,2*(n+l.stretch),2*l.depth),o(e,i.find(".gallery_right_back"),1.4*-l.rotate,2*(-n-l.stretch),2*l.depth))}function d(e,l){var i={index:l};if("function"==typeof e.options.onGalleryStart&&e.options.onGalleryStart(i),"function"==typeof e.options.onGalleryEnd){var t=e.options;setTimeout(function(){t.onGalleryEnd(i)},t.speed)}var n=e.fs.index();n!=l&&(e.fs.removeClass("gallery_active"),e.rm.removeClass("gallery_right_middle"),e.lm.removeClass("gallery_left_middle"),e.rb.removeClass("gallery_right_back"),e.lb.removeClass("gallery_left_back"),r(e,l,n))}var g=function(){if(e()<10)return!1;var l,t=document.createElement("div").style,n="t,WebkitT,MozT,msT,OT".split(",");for(i=0;i<n.length;i++)if(l=n[i]+"ransform",l in t)return n[i]}(),f=function(e){this.options=$.extend({rotate:50,stretch:0,depth:150,slidesPerView:5,speed:500,initialSlide:0},e),this.options.galleryContainer=$(e.galleryContainer),this.fs=null,this.rm=null,this.rb=null,this.lm=null,this.lb=null,l(this),n(this)};return f.prototype={toSlide:function(e){d(this,e)}},{create:function(e){return new f(e)}}}();
+</script>
+<script src="js/bundle.min.js" inline></script>
+<script>
+</script>
+<div style="display:none">
+	<script type="text/javascript">
+        //百度
+        window._bd_share_config = {
+            common: {
+                bdText: '@@tkd.title',
+                bdDesc: '@@tkd.description',
+                bdPic: 'gsres/350.jpg'
+            },
+            share: [{
+                "bdSize": 16
+            }]
+        };
+        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '//j.gamersky.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdcb5060fba0123ff56d253331f28db6a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</div>
+</body>
+</html>

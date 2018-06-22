@@ -1,0 +1,348 @@
+//专题
+@import 'comm';
+.zt-section1{
+	height: 910px;
+	background:url(../gsres/bg1.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		.vd-hp{
+			position: absolute;
+			left: 449px;
+			top: 637px;
+			width: 200px;
+			height: 200px;
+			video{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.bdsharewrap.bdstyle-c{
+			position: absolute;
+			top: 30px;
+			right:0;
+		}
+		.logo_gs{
+			display: block;
+			position: absolute;
+			left: 133px;
+			top: 0px;
+			@include sprite($logo-gs);
+		}
+		.logo_gf{
+			display: block;
+			position: absolute;
+			left: 2px;
+			top: 0px;
+			@include sprite($logo-gf);
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			top: 696px;
+			&.btn1{
+				left: 254px;
+				@include sprite($s1-btn1);
+				&:hover{@include sprite-position($s1-btn1-h);}
+			}
+			&.btn2{
+				left: 627px;
+				@include sprite($s1-btn2);
+				&:hover{@include sprite-position($s1-btn2-h);}
+			}
+		}
+	}
+}
+.zt-section2{
+	height: 810px;
+	background:url(../gsres/bg2.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 102px;
+		h5,p{
+			padding: 0 50px;
+		}
+		h5{
+			margin-top: 12px;
+			line-height: 52px;
+			font-size: 24px;
+			color: #ffd379;
+		}
+		p{
+			line-height: 26px;
+			font-size: 14px;
+			color: #fff2cf;
+			b{
+				color: #ff3c1c;
+			}
+		}
+		.gift{
+			display: block;
+			margin: 0 auto;
+		}
+		.flow{
+			position: absolute;
+			left: 675px;
+			top: 198px;
+			@include sprite($s2-flow);
+			i{
+				display: block;
+				position: absolute;
+				left: 15px;
+				top: 62px;
+				@include sprite($s2-flow-arr);
+				animation: flowArr 0.8s ease-out infinite;
+			}
+		}
+		.btn{
+			display: block;
+			position: absolute;
+			&.btn1{
+				left: 732px;
+				top: 158px;
+				@include sprite($s2-btn1);
+				&:hover{@include sprite-position($s2-btn1-h)}
+			}
+			&.btn2{
+				left: 759px;
+				top: 294px;
+				@include sprite($s2-btn2);
+				&:hover{@include sprite-position($s2-btn2-h)}
+			}
+		}
+	}
+}
+.zt-section3{
+	height: 670px;
+	background:url(../gsres/bg3.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		height: 100%;
+		.role-bg{
+			display: block;
+			position: absolute;
+			left: -60px;
+			top: 201px;
+		}
+		.role{
+			display: block;
+			position: absolute;
+			i{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			img{
+				display: block;
+			}
+			.role-rgb{
+				width: 100%;
+				height: 100%;
+			}
+			.role-light{
+				position: absolute;
+				opacity: 0;
+				visibility: hidden;
+				transition:all 0.25s ease;
+			}
+			span{
+				display: block;
+				position: absolute;
+				bottom: 10px;
+				left: 50%;
+				padding: 0 20px;
+				@include sprite($role-txt);
+				width: 380px;
+				line-height: 26px;
+				font-size: 14px;
+				color: #fff2cf;
+				opacity: 0;
+				visibility: hidden;
+				transform:translate(0,-20px) scale(1,0);
+				transition:all 0.3s ease;
+				b{
+					display: block;
+					padding-top: 10px;
+					line-height: 44px;
+					font-size: 24px;
+					color: #ffd379;
+				}
+			}
+			&:hover{
+				i{
+					animation: UpAndDown 1.2s ease-in-out infinite;
+					//animation: UpAndDown 0.2s linear infinite;
+				}
+				.role-light{
+					opacity: 1;
+					visibility: visible;
+				}
+				span{
+					opacity: 1;
+					visibility: visible;
+					transform:translate(0,0) scale(1,1);
+				}
+			}
+			&.role-fa{
+				left: -121px;
+				top: 211px;
+				width: 374px;
+				height: 390px;
+				.role-light{
+					left: 10px;
+					top: -5px;
+					width: 379px;
+					height: 410px;
+				}
+				span{margin-left: -180px;}
+			}
+			&.role-zhan{
+				left: 212px;
+				top: 259px;
+				width: 576px;
+				height: 352px;
+				.role-light{
+					left: -15px;
+					top: -1px;
+					width: 609px;
+					height: 365px;
+				}
+				span{margin-left: -140px;}
+			}
+			&.role-dao{
+				left: 860px;
+				top: 239px;
+				width: 322px;
+				height: 356px;
+				.role-light{
+					left: -17px;
+					top: -16px;
+					width: 354px;
+					height: 389px;
+				}
+				span{margin-left: -240px;}
+			}
+		}
+	}
+}
+.zt-section4{
+	height: 710px;
+	background:url(../gsres/bg4.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 183px;
+		.round{
+			display: block;
+			position: absolute;
+			left: 353px;
+			top: 585px;
+			animation: toUpHide 1.2s ease infinite;
+		}
+		.outer_wrap {
+			position: relative;
+			height: 395px;
+			width: 1100px;
+			user-select: none;
+		}
+		.gallery_container {
+			transform-style: preserve-3d;
+			perspective: 1300px;
+			width: 580px !important;
+			height: 395px !important;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			margin: 0 0 0 -290px;
+			z-index: 99;
+			.gallery_item {
+				position: absolute;
+				left: 50%;
+				top: 0;
+				z-index: -1;
+				opacity: 0;
+				width: 580px;
+				height: 395px;
+				display: block;
+				transition: all ease;
+				span{
+					display: block;
+					height: 53px;
+					line-height: 53px;
+					font-size: 20px;
+					color: #fff2cf;
+					text-align: center;
+					opacity: 0;
+					visibility: hidden;
+					transition:all 0.25s ease;
+				}
+				img {
+					display: block;
+					opacity: .5;
+					z-index: 1;
+					width: 580px;
+				}
+				.mask{
+					display: block;
+				}
+			}
+			.gallery_active {
+				cursor: default;
+				z-index: 99;
+				opacity: 1;
+				img {
+					opacity: 1;
+					z-index: 9;
+				}
+				span{
+					display: block;
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			.gallery_right_back, .gallery_left_back {
+				opacity: 1;
+				z-index: 1;
+			}
+			.gallery_right_middle, .gallery_left_middle {
+				z-index: 3;
+				opacity: 1;
+			}
+			.z-index2 {
+				z-index: 2 !important;
+			}
+			.z-index3 {
+				z-index: 3 !important;
+			}
+		}
+	}
+}
+.zt-section5{
+	height: 811px;
+	background:url(../gsres/bg5.jpg) center 0 no-repeat;
+	.container{
+		position: relative;
+		padding-top: 246px;
+		.list{
+			li{
+				position: relative;
+				padding-left: 122px;
+				line-height: 28px;
+				font-size: 14px;
+				color: #f0e0c3;
+				i{
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 53px;
+					@include sprite($dot);
+					line-height: 26px;
+					font-size: 18px;
+					color: #f6bc70;
+					text-align: center;
+					text-indent: -4px;
+				}
+			}
+		}
+	}
+}
+@import 'anim';
