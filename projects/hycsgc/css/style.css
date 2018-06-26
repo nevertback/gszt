@@ -13,7 +13,7 @@
 .bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_more{display:none}
 .bdsharewrap.bdstyle-c .bdsharebuttonbox a.bds_count{background-position:-185px 0;overflow:hidden;line-height:33px;text-indent:99999px}
 body,html{min-width:1280px}
-body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px}
+body{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;background-color:#131315}
 h1,h2,h3,h4,h5,p,ul{margin:0;padding:0;list-style:none}
 a{text-decoration:none;cursor:pointer}
 .clearfix:after,.clearfix:before,.container:after,.container:before{display:table;content:" "}

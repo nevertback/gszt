@@ -63,7 +63,7 @@ GsPopup.init({
 .gs-popup-mask{
 	position: fixed;z-index: 99998;top: 0;left: 0;
 	width: 100%;height: 100%;
-	background:url(http://image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
+	background:url(//image.gamersky.com/webimg13/zhuanti/common/black80.png) 0 0 repeat;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.25s ease;
@@ -96,7 +96,7 @@ GsPopup.init({
 		right: -50px;
 		width: 38px;
 		height: 38px;
-		background:url(http://image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat;
+		background:url(//image.gamersky.com/webimg13/zhuanti/common/gsPopupClose.png) 5px 5px no-repeat;
 		&:hover {
 			background-position: -33px 5px;
 		}
@@ -104,7 +104,7 @@ GsPopup.init({
 	.gs-popup-type-image{
 		width: 100%;
 		height: 100%;
-		background:url(http://image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
+		background:url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
 		background-color: rgba(0,0,0,0.2);
 		img{
 			display: block;
@@ -116,7 +116,7 @@ GsPopup.init({
 		position: relative;
 		width: 100%;
 		height: 100%;
-		background:url(http://image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
+		background:url(//image.gamersky.com/webimg13/lib/icons/loading.gif) center center no-repeat;
 		background-color: rgba(0,0,0,0.2);
 		overflow: hidden;
 	}

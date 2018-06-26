@@ -3,7 +3,7 @@ $basewidth:1100px;
 @import './scsslib/tcss/tcss';
 @import './scsslib/baidushare/bds11';
 html,body{min-width:1280px;}
-body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
+body{font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;background-color: #131315;}
 h1,h2,h3,h4,h5,p,ul{margin: 0;padding: 0;list-style:none;}
 a{text-decoration: none;cursor: pointer;}
 .clearfix:before,
